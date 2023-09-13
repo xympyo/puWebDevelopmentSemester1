@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav style="display: flex; flex-direction: row">
+      <div style="margin-right: auto">
+        <a href="../mainPage.html" class="mainpageButton">MAIN PAGE</a>
+      </div>
+      <a
+        href="../pages/week1OfWebDevelopment_PresidentUniversity.html"
+        style="text-decoration: none; font-size: 14px; font-weight: bolder"
+        >Check Week 1</a
+      >
+      <a
+        href="../pages/week2OfWebDevelopment_PresidentUniversity.html"
+        style="text-decoration: none; font-size: 14px; font-weight: bolder"
+        >Check Week 2</a
+      >
+    </nav>
+    <div class="cprimary centered">
+      <h1>Week 1 of Website Development President University</h1>
+    </div>
+
+    <!-- Picture Showcase -->
+    <div class="mb box-shadow">
+      <h1>Picture Page</h1>
+      <div class="fd-row">
+        <img src="../Flower.jpg" alt="Picture of a Flower" width="25%" />
+        <img src="tom_and_jerry.jpg" alt="Tom and Jerry" />
+        <!-- When the Image is not loaded, or Corrupted, or not in File, it will use alt(alternatives) -->
+      </div>
+    </div>
+
+    <div class="mb box-shadow">
+      <!-- To find Online Image, you can use Picsum -->
+      <h1>This is to showcase Random Image href</h1>
+      <img
+        src="https://picsum.photos/200/300"
+        alt="No Image means no Internet Connections"
+        width="25%"
+      />
+      <!-- When Image is loading, it will automatically load alt properties. -->
+    </div>
+
+    <div class="mb box-shadow">
+      <h1>This is to showcase Figure and Figcaption</h1>
+      <p>To see explanation, see Commented Text</p>
+      <figure>
+        <img
+          src="https://picsum.photos/200/300"
+          alt="No Image means no Internet Connection"
+        />
+        <figcaption>Fig 1.1. Random Image</figcaption>
+        <!-- figcaption (figurecaption) gives you an explanation under your Image. -->
+      </figure>
+      <!-- Have to be inside <figure> -->
+    </div>
+
+    <div class="mb box-shadow">
+      <h1>This is to showcase an Image inside of Anchor</h1>
+      <a href="https://puis.president.ac.id/" target="_blank">
+        <img
+          src="../Flower.jpg"
+          alt="Not Image means no Internet Connection!"
+          width="25%"
+        />
+      </a>
+      <!-- You can put Image inside anchor tag (Hyperlink), then your Image will become an anchor link -->
+    </div>
+
+    <div class="mb box-shadow">
+      <h1>
+        This is used for showcasing Responsive Image (Inspect the Website and
+        Change the Resolution to see)
+      </h1>
+      <pictures>
+        <source media="(min-width:  650px)" srcset="../Flower2.jpg" />
+        <source media="(min-width:  450px)" srcset="../Flower3.jpg" />
+        <img src="../Flower 4.jpg" alt="Flower Image" width="25%" />
+      </pictures>
+      <!-- Picture Demonstration, basically Responsive Image -->
+    </div>
+
+    <div class="mb box-shadow">
+      <h1>This is used to showcase Video Tag</h1>
+      <video controls autoplay>
+        <!-- There is a video attributes called "controls" so <video controls> -->
+        <!-- And there is another property, instead of "controls" which gives you freedom, you type autoplay -->
+        <source src="" type="" />
+        <!-- The type property is to define the File extension, for example type="video/mp4" -->
+      </video>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1>This is used to showcase Audio Tag</h1>
+      <p>Please see Commented Lines on HTML to know more</p>
+      <audio>
+        <source />
+        <!-- Just like Video, it has similiar attributes, Type is used to define audio extension -->
+      </audio>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1>This is used to showcase Subtitle in Video Tag</h1>
+      <p>See Commented Lines for more</p>
+      <video>
+        <source />
+        <track src="endgame_id.vtt" srclang="ind" />
+        <track src="endgame_eng.vtt" srclang="eng" />
+        <!-- To use Subtitle, usually .vtt extension, you have to use src attributes and srclang which tells subtitles what Language it is -->
+      </video>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1>This is the Introduction to Table</h1>
+      <div>
+        <table>
+          <!-- tr stands for table row, td stands for table data (table column), th stands for table header -->
+          <tr>
+            <!-- Table Row, Adds new Row -->
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Major</th>
+            <th>GPA</th>
+            <!-- Table Header, Bold Fonts -->
+          </tr>
+          <tr>
+            <!-- Table Row, Adds new Row -->
+            <td>001202300001</td>
+            <td>John Doe</td>
+            <td>Informatics</td>
+            <td>3.90</td>
+            <!-- Table Data, Table Columns -->
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Table semantics in HTML: <thead> <tbody> <tfoot> -->
+    <!-- Using these tags, if the table is long, then the header and footer will be printed on the next pages -->
+
+    <div class="mb box-shadow">
+      <h1>This is to showcase Table Semantics</h1>
+      <p>See Commented Lines in HTML to see more.</p>
+      <div>
+        <table>
+          <!-- You have to start from <table> <table/> -->
+          <thead>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Major</th>
+            <th>GPA</th>
+          </thead>
+          <tbody>
+            <td>00120230001</td>
+            <td>Von Dough</td>
+            <td>International Relations</td>
+            <td>3.9</td>
+          </tbody>
+        </table>
+      </div>
+      <!-- Since this has no Border(originally), you have to use Border tag in Style.css -->
+    </div>
+
+    <div class="mb box-shadow">
+      <h1>This is to showcase Colspan</h1>
+      <!-- Colspan Showcase -->
+      <div>
+        <table>
+          <tr>
+            <td colspan="2">A</td>
+            <!-- colspan is to Merge Column -->
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>C</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1>This is to showcase Rowspan</h1>
+      <!-- Rowspan Showcase -->
+      <div>
+        <table>
+          <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+            <!-- rowspan is to Merge Row -->
+          </tr>
+          <tr>
+            <td>C</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1>This is to showcase Week 2 Exercise</h1>
+      <!-- Exercise -->
+      <div>
+        <table>
+          <tr>
+            <td colspan="3">A</td>
+            <td>B</td>
+            <td rowspan="3">C</td>
+          </tr>
+          <tr>
+            <td rowspan="2">D</td>
+            <td colspan="3">E</td>
+          </tr>
+          <tr>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="right cprimary">
+      <div class="column">
+        <p>Please kindly see Commented Line on the .html code.</p>
+        <div style="display: flex; flex-direction: row-reverse;">
+          <button class="primary-button">
+            <a
+              class="button"
+              href="week2OfWebDevelopment_PresidentUniversity.html"
+              >See Week 2</a
+            >
+          </button>
+          <button class="primary-button" style="margin-right: auto;">
+            <a
+              class="button"
+              href="week1OfWebDevelopment_PresidentUniversity.html"
+              >See Week 3</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

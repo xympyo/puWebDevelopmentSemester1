@@ -1,0 +1,100 @@
+*,
+head,
+body {
+  margin: 1rem;
+  /* background-color: #ffdbc3; */
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #ffdbc3;
+  color: #fff9c9;
+}
+.mb {
+  margin-bottom: 3rem;
+}
+.mb1 {
+  margin-bottom: 1.5rem;
+}
+.box-shadow {
+  box-shadow: 6px 6px 9px 1px rgba(20, 30, 70, 1);
+  -webkit-box-shadow: 6px 6px 9px 1px rgba(20, 30, 70, 1);
+  -moz-box-shadow: 6px 6px 9px 1px rgba(20, 30, 70, 1);
+  border: 1rem #141e46;
+  border-radius: 15px;
+  background-color: #6f61c0;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.mainpageButton {
+  text-decoration: none;
+  color: #fff9c9;
+  font-size: 24px;
+  font-weight: bolder;
+  background-color: #0e21a0;
+  padding: 10px;
+  border-radius: 10px;
+  transition: ease-in-out;
+  transition-duration: 1.5s;
+  .mainpageButton:hover {
+    background-color: #0F2C59;
+  }
+}
+.fd-row {
+  display: flex;
+  flex-direction: row;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cprimary {
+  color: #0e21a0;
+}
+.right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.primary-button {
+  border: none;
+  background-color: #0e21a0;
+  border-radius: 15px;
+  display: flex;
+  .button {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    &:hover {
+      color: #ffb000;
+      transition: ease-in-out;
+      transition-duration: 0.5s;
+    }
+  }
+  &:hover {
+    background-color: #004225;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+  }
+}
+
+/* Week 2 of Web Development Styling */
+table,
+th,
+tr,
+td,
+thead,
+tbody {
+  border: 1px solid black;
+  margin: 5px;
+  /* If you remove border tag, it will become a borderless table */
+  /* using border-collapse: will collapse the border and giving it no padding and margin */
+
+  /* border-collapse: collapse; */
+  /* not Commenting things above will make it border collapse. (Press CTRL + /) */
+}
