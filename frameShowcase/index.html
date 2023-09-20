@@ -1,0 +1,17 @@
+<frameset cols="110,*">
+  <!-- Use cols to create set of frames 110, means use 110 pixels first then use the remainder -->
+  <frame name="leftframe" src="nav.html" />
+  <frameset rows="100,*,50">
+    <frame name="info" src="info.html" />
+    <frameset cols="*,100">
+      <frame name="main" src="main.html" />
+      <frame name="ads" src="ads.html" />
+    </frameset>
+    <frame name="footer" src="footer.html" />
+    <!-- Add 2 frames with unique name, and add the source to load the HTML. Keep an eye on the NAME. -->
+  </frameset>
+  <!-- Its like doing Table, you have to think it logically, you assign Col first -->
+  <!-- Inside the *, you assign 2 new Rows -->
+  <noframes>Not Supported</noframes>
+  <!-- Just incase if your browser does not support frames, it will show whatever inside noframes -->
+</frameset>

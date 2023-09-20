@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .type {
+        margin-top: 10px;
+      }
+    </style>
+    <link rel="stylesheet" href="../style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav style="display: flex; flex-direction: row">
+      <div style="margin-right: auto">
+        <a href="../mainPage.html" class="mainpageButton">MAIN PAGE</a>
+      </div>
+      <a
+        href="../pages/week1OfWebDevelopment_PresidentUniversity.html"
+        style="text-decoration: none; font-size: 14px; font-weight: bolder"
+        >Check Week 1</a
+      >
+      <a
+        href="../pages/week2OfWebDevelopment_PresidentUniversity.html"
+        style="text-decoration: none; font-size: 14px; font-weight: bolder"
+        >Check Week 2</a
+      >
+      <a
+        href="../pages/week3OfWebDevelopment_PresidentUniversity.html"
+        style="text-decoration: none; font-size: 14px; font-weight: bolder"
+        >Check Week 3
+      </a>
+    </nav>
+    <!-- Input Showcase -->
+    <div class="mb box-shadow">
+      <h1 class="centered">Input Introduction</h1>
+      <form>
+        <input type="text" id="fname" name="fname" />
+        <!-- Normal Input, use ID and Name to Divide them -->
+      </form>
+      <form>
+        <label for="fname">First Name :</label>
+        <input type="text" id="fname" name="fname" value="John" />
+        <!-- value="John" is used for Pre Type, so it's already there before you type anything -->
+        <!-- Label got a special attributes called "For", which will be used as an intended Tag -->
+        <!-- For this scenario, the Label tag is intended for Input. And id and name attributes share the same uses -->
+      </form>
+    </div>
+
+    <!-- Button Showcase -->
+    <div class="mb box-shadow">
+      <h1 class="centered">Button Showcase</h1>
+      <input type="button" value="Click Me!" />
+      <!-- Input has a lot of attributes, type="button" is one of it. The value="Click Me!" allows you to know what kind of Button it is-->
+      <button>Send Notification</button>
+      <!-- Normal <button> tag works the same as <input type="button" /> -->
+      <!-- We have two types of Button as well, there are <button> and <submit> -->
+    </div>
+
+    <!-- Input type Showcase -->
+    <div class="mb box-shadow" style="display: flex; flex-direction: column">
+      <h1 class="centered">Different Kind of Input Type Showcase</h1>
+      <form style="display: flex; flex-direction: column">
+        <div style="display: flex; flex-direction: row; align-items: center">
+          Date :<input
+            class="type"
+            type="date"
+            name="myDate"
+            id="myDate"
+            value="20 September 2023"
+          />
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          Email :<input
+            class="type"
+            type="email"
+            name="myEmail"
+            id="myEmail"
+            value="youremail@gmail.com"
+          />
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          Telephone :<input
+            class="type"
+            type="tel"
+            name="myTel"
+            id="myTel"
+            value="08XX - XXXX - XXXXs"
+          />
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          Your File :<input
+            class="type"
+            type="file"
+            name="myFile"
+            id="myFile"
+            value="yourfile.apk"
+          />
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          Password :
+          <input
+            class="type"
+            type="password"
+            name="myPass"
+            id="myPass"
+            value="********"
+          />
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          Number :
+          <input
+            class="type"
+            type="number"
+            name="myNumber"
+            id="myNumber"
+            value="99"
+          />
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          Enter Range :
+          <input
+            class="type"
+            type="range"
+            name="myRange"
+            id="myRange"
+            value="10"
+          />
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <input
+            class="type"
+            type="hidden"
+            name="myHidden"
+            id="myHidden"
+            value="hidden"
+          />
+        </div>
+      </form>
+    </div>
+
+    <!-- Input Attributes Showcase -->
+    <div class="mb box-shadow">
+      <h1 class="centered">Input Attributes Showcase</h1>
+      <form>
+        Username :
+        <input
+          type="text"
+          id="username"
+          name="username"
+          value="John"
+          size="20"
+        />
+        <!-- Size 20 is the font-size, id and name shares the same use -->
+        <br /><br />
+        Nickname :
+        <input type="text" id="nickname" name="nickname" autofocus />
+        <!-- autofocus attributes uses to focus your Display to the designed autofocus, it will instantly moves you there -->
+        <br /><br />
+        Student ID :
+        <input
+          type="text"
+          id="studentId"
+          name="studentId"
+          value="001"
+          readonly
+        />
+        <!-- value is uses to assign value to the input-form, readonly uses so you have to fill all the other input before filling it -->
+        <br /><br />
+        Major :
+        <input type="text" id="major" name="major" value="IT" disabled />
+        <!-- disabled attributes makes you unable to modify input value -->
+        <br /><br />
+        Hobby :
+        <input
+          type="text"
+          id="hobby"
+          name="hobby"
+          placeholder="Swimming"
+          maxlength="20"
+          required
+        />
+        <!-- placeholder allows you to assign it, when you type something it will remove the placeholder -->
+        <!-- maxlength="20", is the max words allowed to type in a form -->
+        <!-- required attributes requires you to fill an input form -->
+        <br /><br />
+        Rate :
+        <input type="number" id="rate" name="rate" min="1" max="5" />
+        <!-- rate is assigning number, with min 1 and max 5 -->
+        <br /><br />
+        <input type="submit" value="Submit Form" />
+        <!-- If you change type="submit" into type="button", it will not work -->
+      </form>
+    </div>
+
+    <!-- Radio Showcase -->
+    <div class="mb box-shadow">
+      <h1 class="centered">Radio Showcase</h1>
+      <p>Choose your favorite Web Language :</p>
+      <form>
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label>
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+        <label for="javavscript">JavaScript</label>
+        <!-- If you want to group the Radio Button into same Group, you have to use same Name -->
+        <!-- If not, the user will be able to toggle all of them, and not allowing you to uncheck it -->
+      </form>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">CheckBox Introduction & Showcase</h1>
+      <form>
+        <input type="checkbox" id="toppingA" name="topping" value="Peanut" />
+        <label for="toppingA">Peanuts</label>
+        <input type="checkbox" id="toppingB" name="topping" value="Cookies" />
+        <label for="toppingB">Cookies</label>
+        <input type="checkbox" id="toppingC" name="topping" value="Almond" />
+        <label for="toppingC">Almonds</label>
+        <!-- Different from radio, checkbox provides separate values that user could choose as she/he would like to, -->
+      </form>
+    </div>
+
+    <!-- To make sure that our radio buttons provide different choices, we MUST give it the same Name -->
+
+    <div class="mb box-shadow">
+      <h1 class="centered">Option Showcase</h1>
+      <label for="cars">Choose a Car :</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="toyota">Toyota</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+        <!-- Theres a special attributes for option, it is selected, to make the options instantly select the destined option -->
+        <!-- works as a hidden scrolled button, you can change the assigned option, can put as many options as possible. -->
+      </select>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">Option Showcase with Multiple Attributes</h1>
+      <label for="cars">Choose a Car :</label>
+      <select id="cars" name="cars" multiple>
+        <!-- multiple attributes allows you to choose multiple option, the way to choose is you hold CTRL button and LMB (Left Mouse Button) -->
+        <option value="volvo">Volvo</option>
+        <option value="toyota">Toyota</option>
+        <option value="fiat" selected>Fiat</option>
+        <option value="audi">Audi</option>
+        <!-- Theres a special attributes for option, it is selected, to make the options instantly select the destined option -->
+        <!-- works as a hidden scrolled button, you can change the assigned option, can put as many options as possible. -->
+      </select>
+    </div>
+
+    <!-- Optgroup Showcase -->
+    <div class="mb box-shadow">
+      <h1 class="centered">Optgroup Showcase</h1>
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <optgroup label="Japan Cars">
+          <option value="toyota">Toyota</option>
+          <option value="honda">Honda</option>
+        </optgroup>
+        <optgroup label="German Cars">
+          <option value="mercedes">Mercedes</option>
+          <option value="bmw">BMW</option>
+        </optgroup>
+        <!-- Basically creates a group inside of a Selection, not really important but it helps sometimes, who knows -->
+      </select>
+    </div>
+
+    <!-- Textarea Showcase -->
+    <div class="mb box-shadow">
+      <h1 class="centered">Textarea Showcase</h1>
+      <label for="web_programming">How Web Programming is :</label>
+      <textarea id="web_programming" name="web_programming" rows="4" cols="50">
+        Learn Web Programming they say, it will be easy they say.
+      </textarea>
+      <!-- Also everything you put is literally be in there, even comments -->
+      <!-- If you open it and you see its Spaced, because text area takes everything literally, if you remove the Tab space, it will be no space -->
+
+      <!-- Textarea is special, therefore everything that is put inside textarea is preserved, its pre tag -->
+      <!-- Textarea is an area where it can be modified in width and height. -->
+    </div>
+
+    <!-- Fieldset and Legend Showcase -->
+    <div class="mb box-shadow">
+      <form>
+        <fieldset>
+          <!-- The <fieldset> is the whole box -->
+          <legend>Personalia :</legend>
+          <!-- the <legend>is the name inbetween box -->
+          <label for="fname">First Name :</label>
+          <input type="text" id="fname" name="fname" value="John" />
+          <label for="lname">Last Name :</label>
+          <input type="text" id="lname" name="lname" value="Doe" />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </div>
+    <!-- If you want to group several inputs inside of a group, you can split it and put it in separate groups by using Fieldset -->
+
+    <!-- Datalist Showcase -->
+    <div class="mb box-shadow">
+      <h1 class="centered">Datalist Showcase</h1>
+      <form>
+        <input list="browsers" name="browser" />
+        <datalist id="browsers">
+          <option value="Internet Explorer"></option>
+          <option value="Firefox"></option>
+          <option value="Chrome"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+        </datalist>
+        <!-- Basically Options, but with Data inside, it's like Options with Suggestions -->
+      </form>
+    </div>
+
+    <div class="mb box-shadow">
+      <a href="../frameShowcase/index.html" class="centered" style="text-decoration: none; color: currentColor;"><h1>CLICK ME TO SEE FRAME SHOWCASE</h1></a>
+    </div>
+
+    <div class="right cprimary">
+      <div class="column">
+        <p>Please kindly see Commented Line on the .html code.</p>
+        <div style="display: flex; flex-direction: row">
+          <button class="primary-button">
+            <a
+              class="button"
+              href="week2OfWebDevelopment_PresidentUniversity.html"
+              >See Week 2</a
+            >
+          </button>
+          <button class="primary-button" style="margin-right: auto">
+            <a
+              class="button"
+              href="week3OfWebDevelopment_PresidentUniversity.html"
+              >See Week 4
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
