@@ -1,0 +1,94 @@
+p {
+  color: red;
+}
+/* This will be the only that one that is executed */
+/* Because CSS is a Cascading Style Sheet, meaning Menimpuk, last one will be executed */
+p {
+  color: black;
+}
+/* So no different will be made, the color:"red" above wont work */
+
+/* What if we have the similiar tag that we have to design? */
+/* For example */
+.multipletagShowcase-1 {
+  color: red;
+}
+.multipletagShowcase-p {
+  color: red;
+}
+/* Instead of doing these, which is redundant, just use Comma */
+.multipletagShowcase-h1,
+.multipletagShowcase-p {
+  color: blue;
+}
+
+/* How to Link ID from HTML to CSS */
+p[id="myParagraph"] {
+  color: red;
+}
+/* How to link name from HTML to CSS */
+div[name="myDiv"] {
+  color: blue;
+}
+/* You can also call ID using Hashtag */
+#myParagraph {
+  color: red;
+}
+
+/* This is to Showcase Class */
+.classShowcase {
+  color: yellow;
+}
+.classShowcaseBackground {
+  background-color: green;
+}
+
+/* Adjacent Sibling Combinator Showcase */
+h1 + p {
+  /* If you read it, it is said that "Please find the <p> tag that comes right after <h1> tag */
+  color: red;
+}
+/* Descendant Selector Combinator */
+li em {
+  /* If you read it, it is said that "Please find 1 <em> that is the children of <li> */
+  background-color: green;
+}
+/* Pseudo Class Example */
+/* Pseudo Class is the behaviour of HTML to define characteristics */
+li:last-child em {
+  background-color: green;
+}
+/* nth-child(integer) is a pseudo class that uses to organize */
+
+a {
+  &:link {
+    color: red;
+    /* If you already visited the Page, it will not changed, meaning you have to go Incognito Mode since Cache counted the <a> tag  */
+  }
+  &:hover {
+    color: black;
+    /* When you hover the page */
+  }
+  &:active {
+    color: yellow;
+    /* When the page is active (clicked) */
+  }
+  &:visited {
+    color: green;
+    /* When you already visited the page */
+  }
+}
+
+.inheritanceShowcase {
+  color: red;
+  /* P won't be changed since in line 6, P is defined */
+}
+
+.cssBoxShowcase {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  /* The Distance from each other */
+  padding-bottom: 5px;
+  /* The Distance between the Content and the Border */
+}
+
