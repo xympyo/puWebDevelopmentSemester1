@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 5</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      ul {
+        /* List Style Image Showcase */
+        list-style-image: url();
+      }
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+        border-collapse: separate;
+        empty-cells: hide;
+        /* Empty Cells wont work if border-collapse: collapse; */
+        border-spacing: 10px;
+        /* Basically Padding, it gives spaces between border */
+      }
+      .borderradius-showcase {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        /* Shorthand from border-top-left, top-right, bottom-left and bottom-right */
+        border-radius: 10px 20px 30px 40px;
+      }
+      .rgbcolor-showcase {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        background-color: rgba(255, 12, 30, 0.5);
+      }
+      .lineargradient-showcase {
+        width: 100px;
+        height: 100px;
+        background-image: linear-gradient(45deg, red, black, purple, pink);
+      }
+      .lineargradient-repeat-showcase {
+        width: 100px;
+        height: 100px;
+        background-image: repeating-linear-gradient(
+          pink,
+          violet,
+          30%,
+          black 40%,
+          yellow 10%,
+          red 50%
+        );
+      }
+      .radialgradient-showcase {
+        width: 100px;
+        height: 100px;
+        background-image: radial-gradient(red, black, purple, pink, yellow);
+      }
+      .radialgradient-repeat-showcase {
+        width: 100px;
+        height: 100px;
+        background-image: repeating-radial-gradient(
+          red,
+          black 10%,
+          purple,
+          pink 30%,
+          yellow 10%
+        );
+      }
+      .conicgradient-showcase {
+        width: 100px;
+        height: 100px;
+        background-image: conic-gradient(red, black, purple, pink, yellow);
+      }
+      .conicgradient-repeat-showcase {
+        width: 100px;
+        height: 100px;
+        background-image: repeating-conic-gradient(
+          red,
+          black 30%,
+          purple,
+          pink 20%,
+          yellow 40%
+        );
+      }
+
+      .rotate-showcase {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: yellow;
+        transform: rotate(45deg);
+        transition: ease-in-out;
+      }
+      .scale-showcase {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: yellow;
+        transform: scale(0.4);
+      }
+      .skew-showcase {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: yellow;
+        transform: skew(20deg, 10deg);
+      }
+
+      .transition-showcase {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        transition-property: width height;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        &:hover {
+          transform: rotate(10deg);
+          width: 300px;
+          height: 300px;
+          background-color: red;
+        }
+      }
+
+      .animation-showcase {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* animation-name: (value) IS SO IMPORTANT */
+        animation-name: changeColor;
+        animation-duration: 4s;
+        /* How many time does it will change */
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+      }
+      .animation-test-showcase {
+        font-size: 14px;
+        color: pink;
+        text-shadow: 1px 1px 5px blue;
+      }
+
+      /* changeColor is from animation-name:(value) */
+      @keyframes changeColor {
+        0% {
+          background-color: red;
+          width: 300px;
+        }
+        10% {
+          background-color: aliceblue;
+          width: 200px;
+        }
+        25% {
+          background-color: yellow;
+          width: 150px;
+        }
+        50% {
+          background-color: green;
+          width: 200px;
+        }
+        75% {
+          background-color: blue;
+          width: 450px;
+        }
+        100% {
+          background-color: red;
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav style="display: flex; flex-direction: row">
+      <div style="margin-right: auto">
+        <a href="../mainPage.html" class="mainpageButton">MAIN PAGE</a>
+      </div>
+      <a
+        href="../pages/week1OfWebDevelopment_PresidentUniversity.html"
+        style="text-decoration: none; font-size: 14px; font-weight: bolder"
+        >Check Week 1</a
+      >
+      <a
+        href="../pages/week2OfWebDevelopment_PresidentUniversity.html"
+        style="text-decoration: none; font-size: 14px; font-weight: bolder"
+        >Check Week 2</a
+      >
+      <a
+        href="../pages/week3OfWebDevelopment_PresidentUniversity.html"
+        style="text-decoration: none; font-size: 14px; font-weight: bolder"
+        >Check Week 3
+      </a>
+      <a
+        href="../pages/week4OfWebDevelopment_PresidentUniversity.html"
+        style="text-decoration: none; font-size: 14px; font-weight: bolder"
+        >Check Week 4</a
+      >
+      <a
+        href="../pages/week5OfWebDevelopment_PresidentUniversity.html"
+        style="text-decoration: none; font-size: 14px; font-weight: bolder"
+        >Check Week 5</a
+      >
+    </nav>
+
+    <div class="cprimary centered">
+      <h1>Week 5 of Website Development President University</h1>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">
+        Not Explaining It. Open the Docs and try it by Yourself
+      </h1>
+      <a
+        href="https://docs.google.com/presentation/d/1-Gtv-SNmuKVWkYp1tCcWRWCjGxWlgZedvz78wYSaD9c/edit?usp=sharing"
+        target="_blank"
+        >Click Here to See Docummentation</a
+      >
+      <a
+        href="https://docs.google.com/document/d/1l6kzLYYCqPBniKoXUAmPKZIZrC-gZm-pqphMvlWiyDA/edit?usp=sharing"
+        target="_blank"
+        >Click Here to See Docummentation</a
+      >
+    </div>
+    <div class="mb box-shadow">
+      <ul>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+      </ul>
+    </div>
+    <div class="mb box-shadow">
+      <table>
+        <tr>
+          <td></td>
+          <!-- If you see it on Website, this is gone because empty-cells:hidden; -->
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+      </table>
+    </div>
+    <div class="mb box-shadow">
+      <h1 centered>Empty Div Border and Background Image Showcase</h1>
+      <div style="display: flex; flex-direction: row">
+        <div class="borderradius-showcase"></div>
+        <div class="rgbcolor-showcase"></div>
+        <div class="lineargradient-showcase"></div>
+        <div class="lineargradient-repeat-showcase"></div>
+        <div class="radialgradient-showcase"></div>
+        <div class="radialgradient-repeat-showcase"></div>
+        <div class="conicgradient-showcase"></div>
+        <div class="conicgradient-repeat-showcase"></div>
+      </div>
+    </div>
+    <div class="mb box-shadow">
+      <h1 class="centered">Transform Showcase</h1>
+      <div style="display: flex; flex-direction: row">
+        <div class="rotate-showcase"></div>
+        <div class="scale-showcase"></div>
+        <div class="skew-showcase"></div>
+      </div>
+    </div>
+    <div class="mb box-shadow">
+      <h1 class="centered">Transition Showcase</h1>
+      <div class="transition-showcase"></div>
+    </div>
+    <div class="mb box-shadow">
+      <h1 class="centered">Animation Showcase</h1>
+      <div class="animation-showcase"></div>
+      <div class="animation-test-showcase">
+        <p>Come on Baby Let's Go Party</p>
+      </div>
+    </div>
+    <div class="mb box-shadow">
+      <p class="centered">Sneak Peeks!</p>
+      <p>Week 6 is Projects! Lasts for 2 Weeks</p>
+      <p>The Mid Term will be heavily around Table and Frame!</p>
+    </div>
+
+    <div class="right cprimary">
+      <div class="column">
+        <p>
+          Please see the following HTML File and The CSS File that starts with
+          "week4"
+        </p>
+        <div style="display: flex; flex-direction: row">
+          <button class="primary-button">
+            <a
+              class="button"
+              href="week4OfWebDevelopment_PresidentUniversity.html"
+              >See Week 4</a
+            >
+          </button>
+          <button class="primary-button" style="margin-right: auto">
+            <a
+              class="button"
+              href="week6OfWebDevelopment_PresidentUniversity.html"
+              >See Week 5
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
