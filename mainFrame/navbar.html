@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Navigation Bar</title>
+    <style>
+      *,
+      html {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Poppins", sans-serif;
+        overflow-y: hidden;
+      }
+      .mainButton {
+        text-decoration: none;
+        color: #fff9c9;
+        background-color: #0e21a0;
+        border: 2px solid wheat;
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-timing-function: ease-out;
+        transition-duration: 1s;
+        &:hover {
+          background-color: violet;
+          color: #0e21a0;
+          border: 2px solid #0e21a0;
+          text-decoration: none;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: #0e21a0;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.5s;
+      }
+      a:hover {
+        color: blueviolet;
+        text-decoration: underline;
+      }
+      li {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body style="height: 70px; background-color: #ffdbc3">
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        align-items: center;
+      "
+    >
+      <a class="mainButton" href="../mainPage.html" target="mainPage"
+        ><p>GO TO MAIN SCREEN</p></a
+      >
+      <nav style="margin-left: auto">
+        <ul style="display: flex; flex-direction: row; list-style: none">
+          <li>
+            <a
+              href="../pages/week1OfWebDevelopment_PresidentUniversity.html"
+              target="mainPage"
+              ><p>Week 1</p></a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/week2OfWebDevelopment_PresidentUniversity.html"
+              target="mainPage"
+              ><p>Week 2</p></a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/week3OfWebDevelopment_PresidentUniversity.html"
+              target="mainPage"
+              ><p>Week 3</p></a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/Week4/week4OfWebDevelopment_PresidentUniversity.html"
+              target="mainPage"
+              ><p>Week 4</p></a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/week5OfWebDevelopment_PresidentUniversity.html"
+              target="mainPage"
+              ><p>Week 5</p></a
+            >
+          </li>
+          <li>
+            <a
+              href="../pages/Week6/Week6OfWebDevelopment_PresidentUniversity.html"
+              target="mainPage"
+              ><p>Week 6</p></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

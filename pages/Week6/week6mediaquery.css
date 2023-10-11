@@ -1,0 +1,57 @@
+div {
+  padding: 20px;
+  color: white;
+}
+
+body {
+    background-color: lightgreen;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  div {
+    background-color: red;
+  }
+  /* css here */
+}
+/* Small devices (phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  div {
+    background-color: green;
+  }
+  /* css here */
+}
+/* Medium devices (tablets, 768 and up) */
+@media only screen and (min-width: 600px) {
+  div {
+    background-color: blue;
+  }
+  /* css here */
+}
+/* Large devices (laptop, 992 and up) */
+@media only screen and (min-width: 768px) {
+  div {
+    background-color: orange;
+  }
+  /* css here */
+}
+/* Extra Large devices (big laptop, tv and such, 1200px and up) */
+@media only screen and (min-width: 992px) {
+  div {
+    background-color: yellow;
+  }
+  /* css here */
+}
+/* Extra Large devices (big laptop, tv and such, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  div {
+    background-color: pink;
+  }
+  /* css here */
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 4</title>
+
+    <!-- This is a Style Tag, it's basically style.css but inside your html -->
+    <style>
+      /* a Trick is that you can put h6 in front of the class name and the h6 only will be changed */
+      h6.withinHTMLshowcase {
+        color: red;
+        font-size: 20px;
+      }
+      /* now H6 Tag will always be Red Colored and 20px Font Size until you change the value. */
+    </style>
+
+    <!-- You can also link your css file into html -->
+    <link rel="stylesheet" href="week4OfWebDevelopment.css" />
+    <!-- rel is the relation between your Link, so it knows that it's a stylesheet, if it is declared the href="" will be underlined -->
+
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <div class="cprimary centered">
+      <h1>Week 4 of Website Development President University</h1>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">This is to Showcase Inline CSS Showcase</h1>
+      <!-- This is inline CSS Showcase -->
+      <p style="color: red">This is a paragraph</p>
+      <!-- Without CSS -->
+      <p>This is another paragraph</p>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">
+        Here's a Showcase for Within HTML CSS Showcase using h6 as a Tag
+      </h1>
+      <!-- Within HTML CSS Showcase, h6 -->
+      <h6 class="withinHTMLshowcase">
+        Hello! I will always be red with 20px font size because I'm styled
+        inside Style HTML!
+      </h6>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">Multiple Tag Showcase</h1>
+      <!-- Multiple Tag CSS Showcase -->
+      <h1 class="multipletagShowcase-h1">Hello</h1>
+      <p class="multipletagShowcase-p">World</p>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">Style ID Showcase</h1>
+      <!-- Style ID Showcase -->
+      <h1>Hello World</h1>
+      <p id="myParagraph">This is a paragraph</p>
+      <p>This is another paragraph</p>
+      <div name="myDiv">Welcome to Computing</div>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">Class Showcase and Definition</h1>
+      <!-- Class Showcase (means Classifier) -->
+      <p class="classShowcase">This is Paragraph in Class</p>
+      <!-- You can combine the class like this -->
+      <p class="classShowcase classShowcaseBackground">Combined Class</p>
+      <!-- Class can be Stacked, and can be called more than once, while ID is unique, you can not call it more than one -->
+      <div class="classShowcaseBackground">This is Background Green</div>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">Combinator Showcase</h1>
+      <!-- Combinator Showcase -->
+      <h1>This is a heading</h1>
+      <p>This is a paragraph</p>
+      <p>This is another paragraph</p>
+      <ul>
+        <li>John</li>
+        <li>Jane</li>
+        <li><em>Jane</em></li>
+        <!-- ul is the parent of li, li is the parent of em -->
+      </ul>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">CSS Based on State Showcase</h1>
+      <!-- CSS based on State Showcase -->
+      <a href="https://puis.president.ac.id">President University</a>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">Inheritance Showcase</h1>
+      <!-- Inheritance Showcase -->
+      <div class="inheritanceShowcase">
+        <!-- You put style into their parents, their children will have the style -->
+        Hello World
+        <p>This is Inheritance Style Sheet Showcase</p>
+        <!-- P wont be changed because in week4OfWebDevelopment.css in line 6 is defined -->
+      </div>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">CSS Box Showcase</h1>
+      <!-- CSS Box Showcase -->
+      <div class="cssBoxShowcase">Test 1</div>
+      <div class="cssBoxShowcase">Test 2</div>
+    </div>
+
+    <div class="mb box-shadow">
+      <h1 class="centered">Image Background Showcase! Click Link</h1>
+      <!-- Image Background Showcase -->
+      <div class="">
+        <a
+          class="centered"
+          href="../pages/Week4OfWebDevelopmentAttributes.html"
+          style="font-size: 32px; font-weight: bolder; text-decoration: none"
+          >Clcik Here to see Background Image Attributes Showcase</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
