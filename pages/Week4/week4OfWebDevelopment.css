@@ -61,6 +61,8 @@ li:last-child em {
 /* nth-child(integer) is a pseudo class that uses to organize */
 
 a {
+  color: inherit;
+  text-decoration: none;
   &:link {
     color: red;
     /* If you already visited the Page, it will not changed, meaning you have to go Incognito Mode since Cache counted the <a> tag  */
@@ -91,4 +93,3 @@ a {
   padding-bottom: 5px;
   /* The Distance between the Content and the Border */
 }
-

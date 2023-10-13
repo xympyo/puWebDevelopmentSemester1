@@ -184,72 +184,225 @@
       <h1 class="centered">
         Not Explaining It. Open the Docs and try it by Yourself
       </h1>
-      <a
-        href="https://docs.google.com/presentation/d/1-Gtv-SNmuKVWkYp1tCcWRWCjGxWlgZedvz78wYSaD9c/edit?usp=sharing"
-        target="_blank"
-        >Click Here to See Docummentation</a
-      >
-      <a
-        href="https://docs.google.com/document/d/1l6kzLYYCqPBniKoXUAmPKZIZrC-gZm-pqphMvlWiyDA/edit?usp=sharing"
-        target="_blank"
-        >Click Here to See Docummentation</a
-      >
+      <section style="display: flex; flex-direction: column">
+        <a
+          href="https://docs.google.com/presentation/d/1-Gtv-SNmuKVWkYp1tCcWRWCjGxWlgZedvz78wYSaD9c/edit?usp=sharing"
+          target="_blank"
+          style="text-decoration: none; color: inherit"
+          >Click Here to See Docummentation</a
+        >
+        <a
+          href="https://docs.google.com/document/d/1l6kzLYYCqPBniKoXUAmPKZIZrC-gZm-pqphMvlWiyDA/edit?usp=sharing"
+          target="_blank"
+          style="text-decoration: none; color: inherit"
+          >Click Here to See Docummentation</a
+        >
+      </section>
     </div>
     <div class="mb box-shadow">
       <h1 class="centered">List Items Showcase</h1>
-      <ul>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-      </ul>
+      <ol>
+        <li>
+          <ul>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+          </ul>
+          <i style="font-size: 12px"
+            >&lt;ul&gt; tag stands for "unordered list", which makes the
+            &lt;li&gt; tag or "list items" becomes just dots.</i
+          >
+        </li>
+      </ol>
     </div>
+
     <div class="mb box-shadow">
       <h1 class="centered">empty-cells:hidden; Showcase</h1>
-      <table>
-        <tr>
-          <td></td>
-          <!-- If you see it on Website, this is gone because empty-cells:hidden; -->
-          <td>2</td>
-          <td>3</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-        </tr>
-      </table>
+      <ol>
+        <li>
+          <table>
+            <tr>
+              <td></td>
+              <!-- If you see it on Website, this is gone because empty-cells:hidden; -->
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+          </table>
+          <i style="font-size: 12px"
+            >If you see it on website and notice the missing table on the
+            supposed to be 1, it's because styling attributes empty-cells:
+            hidden;</i
+          >
+        </li>
+      </ol>
     </div>
     <div class="mb box-shadow">
       <h1 centered>Empty Div Border and Background Image Showcase</h1>
-      <div style="display: flex; flex-direction: row">
-        <div class="borderradius-showcase"></div>
-        <div class="rgbcolor-showcase"></div>
-        <div class="lineargradient-showcase"></div>
-        <div class="lineargradient-repeat-showcase"></div>
-        <div class="radialgradient-showcase"></div>
-        <div class="radialgradient-repeat-showcase"></div>
-        <div class="conicgradient-showcase"></div>
-        <div class="conicgradient-repeat-showcase"></div>
-      </div>
+      <ol>
+        <li>
+          <div class="borderradius-showcase"></div>
+          <i style="font-size: 12px"
+            >This is basically to showcase border-radius: styling</i
+          >
+        </li>
+        <li>
+          <div class="rgbcolor-showcase"></div>
+          <i style="font-size: 12px"
+            >This is basically to showcase background-color: and border:
+            attributes</i
+          >
+        </li>
+        <li>
+          <div class="lineargradient-showcase"></div>
+          <i style="font-size: 12px"
+            >This is basically to showcase lineargradient:
+          </i>
+        </li>
+        <li>
+          <div class="lineargradient-repeat-showcase"></div>
+          <i style="font-size: 12px"
+            >This is basically to showcase lineargradient-repeat:
+          </i>
+        </li>
+        <li>
+          <div class="radialgradient-showcase"></div>
+          <i style="font-size: 12px"
+            >This is basically to showcase radialgradient:
+          </i>
+        </li>
+        <li>
+          <div class="radialgradient-repeat-showcase"></div>
+          <i style="font-size: 12px"
+            >This is basically to showcase radialgradient-repeat:
+          </i>
+        </li>
+        <li>
+          <div class="conicgradient-showcase"></div>
+          <i style="font-size: 12px"
+            >This is basically to showcase conicgradient:
+          </i>
+        </li>
+        <li>
+          <div class="conicgradient-repeat-showcase"></div>
+          <i style="font-size: 12px"
+            >This is basically to showcase conicgradient-repeat:
+          </i>
+        </li>
+      </ol>
     </div>
     <div class="mb box-shadow">
       <h1 class="centered">Transform Showcase</h1>
-      <div style="display: flex; flex-direction: row">
-        <div class="rotate-showcase"></div>
-        <div class="scale-showcase"></div>
-        <div class="skew-showcase"></div>
-      </div>
+      <ol>
+        <li style="margin-bottom: 1rem">
+          <div class="rotate-showcase" style="margin-bottom: 1rem"></div>
+          <i style="font-size: 12px">Results of transform: rotate(45deg);</i>
+        </li>
+        <li style="margin-bottom: 1rem">
+          <div class="scale-showcase" style="margin-bottom: 1rem"></div>
+          <i style="font-size: 12px">Results of transform: scale(0.4);</i>
+        </li>
+        <li style="margin-bottom: 1rem">
+          <div class="skew-showcase" style="margin-bottom: 1rem"></div>
+          <i style="font-size: 12px"
+            >Results of transform: skew(20deg, 10deg)</i
+          >
+        </li>
+      </ol>
     </div>
     <div class="mb box-shadow">
       <h1 class="centered">Transition Showcase</h1>
       <div class="transition-showcase"></div>
+      <i style="font-size: 12px"
+        >Results of :
+        <ol>
+          <li>
+            <i style="font-size: 12px"
+              ><span style="color: goldenrod"
+                >.transition-showcase
+                <span style="color: yellow"
+                  >{ <br />&nbsp;&nbsp;&nbsp;<span style="color: lightblue"
+                    >width: <span style="color: lightgreen">100px;</span></span
+                  ><br />&nbsp;&nbsp;&nbsp;<span style="color: lightblue"
+                    >height: <span style="color: lightgreen">100px;</span></span
+                  ><br />&nbsp;&nbsp;&nbsp;<span style="color: lightblue"
+                    >background-color:
+                    <span style="color: burlywood">pink;</span></span
+                  ><br />&nbsp;&nbsp;&nbsp;<span style="color: lightblue"
+                    >transition-property:
+                    <span style="color: burlywood">width height;</span></span
+                  ><br />&nbsp;&nbsp;&nbsp;<span style="color: lightblue"
+                    >transition-duration:
+                    <span style="color: lightgreen">1s</span></span
+                  ><br />&nbsp;&nbsp;&nbsp;<span style="color: lightblue"
+                    >transition-timing-function:
+                    <span style="color: burlywood">ease-in-out;</span></span
+                  ><br />&nbsp;&nbsp;&nbsp;<span style="color: burlywood"
+                    >&hover:
+                    <span style="color: violet"
+                      >{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        style="color: lightblue"
+                        >transform:
+                        <span style="color: lightyellow"
+                          >rotate
+                          <span style="color: lightblue"
+                            >(
+                            <span style="color: lightgreen"
+                              >10deg
+                              <span style="color: lightblue"
+                                >);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                  style="color: lightblue"
+                                  >width:
+                                  <span style="color: lightgreen"
+                                    >300px;
+                                    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                                  ></span
+                                ><span style="color: lightblue"
+                                  >height:
+                                  <span style="color: lightgreen"
+                                    >300px;
+                                    <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+                                  ></span
+                                ><span style="color: lightblue"
+                                  >background-color:
+                                  <span style="color: burlywood"
+                                    >red; <br />&nbsp;&nbsp;&nbsp;<span
+                                      style="color: violet"
+                                      >} <br /><span style="color: yellow"
+                                        >}</span
+                                      ></span
+                                    ></span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        ></span
+                      ></span
+                    ></span
+                  ></span
+                ></span
+              ></i
+            >
+          </li>
+        </ol></i
+      >
     </div>
     <div class="mb box-shadow">
       <h1 class="centered">Animation Showcase</h1>
-      <div class="animation-showcase"></div>
-      <div class="animation-test-showcase">
-        <p>Come on Baby Let's Go Party</p>
-      </div>
+      <ol>
+        <li>
+          <div class="animation-showcase"></div>
+          <div class="animation-test-showcase">
+            <p>Come on Barbie Let's Go Party</p>
+          </div>
+        </li>
+        <i style="font-size: 12px">See line 132 to line 175.</i>
+      </ol>
     </div>
     <div class="mb box-shadow">
       <p class="centered">Sneak Peeks!</p>
