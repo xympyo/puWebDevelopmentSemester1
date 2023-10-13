@@ -1,13 +1,40 @@
 *,
 head,
 body {
-  margin: 1rem;
   /* background-color: #ffdbc3; */
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #ffdbc3;
-  color: #fff9c9;
+  color: #fbfff4;
+  background-color: #313131;
+  background-image: url("images/pagesBackgroundnoBlur.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 4rem;
+  padding: 0px;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i {
+  pointer-events: none;
+}
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+.white {
+  color: #fbfff4;
 }
 .mb {
   margin-bottom: 3rem;
@@ -16,13 +43,14 @@ body {
   margin-bottom: 1.5rem;
 }
 .box-shadow {
-  box-shadow: 6px 6px 9px 1px rgba(20, 30, 70, 1);
-  -webkit-box-shadow: 6px 6px 9px 1px rgba(20, 30, 70, 1);
-  -moz-box-shadow: 6px 6px 9px 1px rgba(20, 30, 70, 1);
   border: 1rem #141e46;
-  border-radius: 15px;
-  background-color: #6f61c0;
   padding: 2rem;
+  /* From https://css.glass (CSS Glass Generator) */
+  background: rgba(251, 255, 244, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 .mainpageButton {
   text-decoration: none;
@@ -35,7 +63,7 @@ body {
   transition: ease-in-out;
   transition-duration: 1.5s;
   .mainpageButton:hover {
-    background-color: #0F2C59;
+    background-color: #0f2c59;
   }
 }
 .fd-row {
@@ -46,9 +74,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #313131;
 }
 .cprimary {
-  color: #0e21a0;
+  color: #fbfff4;
+  font-weight: 800;
 }
 .right {
   display: flex;
@@ -88,7 +118,7 @@ tr,
 td,
 thead,
 tbody {
-  border: 1px solid black;
+  border: 1px solid #313131;
   margin: 5px;
   /* If you remove border tag, it will become a borderless table */
   /* using border-collapse: will collapse the border and giving it no padding and margin */

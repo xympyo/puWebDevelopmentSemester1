@@ -6,7 +6,8 @@
     <title>Main Navigation Bar</title>
     <style>
       *,
-      html {
+      html,
+      body {
         margin: 0px;
         padding: 0px;
         font-family: "Poppins", sans-serif;
@@ -14,10 +15,10 @@
       }
       .mainButton {
         text-decoration: none;
-        color: #fff9c9;
-        background-color: #0e21a0;
-        border: 2px solid wheat;
-        padding: 15px;
+        color: #54fed5;
+        background-color: #241c15;
+        border: 2px solid #54fed5;
+        padding: 10px;
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -25,40 +26,40 @@
         transition-timing-function: ease-out;
         transition-duration: 1s;
         &:hover {
-          background-color: violet;
-          color: #0e21a0;
-          border: 2px solid #0e21a0;
+          background-color: #f2f2f2;
+          color: #1d1d1d;
+          border: 2px solid #1d1d1d;
           text-decoration: none;
         }
       }
       a {
         text-decoration: none;
-        color: #0e21a0;
+        color: #241c15;
         transition-timing-function: ease-in-out;
-        transition-duration: 0.5s;
+        transition-duration: .5s;
       }
       a:hover {
-        color: blueviolet;
-        text-decoration: underline;
+        color: #54fed5;
       }
       li {
         margin-right: 10px;
       }
     </style>
   </head>
-  <body style="height: 70px; background-color: #ffdbc3">
+  <body style="height: 70px; background-color: #f2f2f2">
     <div
       style="
         display: flex;
         flex-direction: row;
         margin: 5px;
         align-items: center;
+        justify-content: space-evenly;
       "
     >
-      <a class="mainButton" href="../mainPage.html" target="mainPage"
+      <a class="mainButton" href="../pages/mainPage.html" target="mainPage"
         ><p>GO TO MAIN SCREEN</p></a
       >
-      <nav style="margin-left: auto">
+      <nav>
         <ul style="display: flex; flex-direction: row; list-style: none">
           <li>
             <a
@@ -104,6 +105,7 @@
           </li>
         </ul>
       </nav>
+      <div><p style="font-weight: 200px; font-size: 12px;">Credit : Moshe Dayan</p></div>
     </div>
   </body>
 </html>

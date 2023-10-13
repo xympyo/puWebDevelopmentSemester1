@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week 3</title>
+    <title>
+      President University Website Programming Summary | Week 3 | Moshe Dayan
+    </title>
     <style>
       .type {
         margin-top: 10px;
@@ -26,108 +28,207 @@
     <!-- Input Showcase -->
     <div class="mb box-shadow">
       <h1 class="centered">Input Introduction</h1>
-      <form>
-        <input type="text" id="fname" name="fname" />
-        <!-- Normal Input, use ID and Name to Divide them -->
-      </form>
-      <form>
-        <label for="fname">First Name :</label>
-        <input type="text" id="fname" name="fname" value="John" />
-        <!-- value="John" is used for Pre Type, so it's already there before you type anything -->
-        <!-- Label got a special attributes called "For", which will be used as an intended Tag -->
-        <!-- For this scenario, the Label tag is intended for Input. And id and name attributes share the same uses -->
-      </form>
+      <ol>
+        <li>
+          <form>
+            <input type="text" id="fname" name="fname" />
+            <!-- Normal Input, use ID and Name to Divide them -->
+          </form>
+          <i style="font-size: 12px"
+            >&lt;input&gt; tag has plenty of properties, for above we uses
+            <ol>
+              <li>
+                &lt;tag <span style="color: lightblue">type="text"</span>&gt;
+              </li>
+              <li>
+                &lt;tag <span style="color: lightblue">id="fname"</span>&gt;
+              </li>
+              <li>
+                &lt;tag <span style="color: lightblue">name="fname"</span>&gt;
+              </li>
+            </ol></i
+          >
+        </li>
+        <li>
+          <form>
+            <label for="fname">First Name :</label>
+            <input type="text" id="fname" name="fname" value="John" />
+            <!-- value="John" is used for Pre Type, so it's already there before you type anything -->
+            <!-- Label got a special attributes called "For", which will be used as an intended Tag -->
+            <!-- For this scenario, the Label tag is intended for Input. And id and name attributes share the same uses -->
+          </form>
+          <i style="font-size: 12px"
+            >Just like above, the &lt;input&gt; has many attributes. <br />But
+            for this one, it is nested inside &lt;form&gt; tag, and has
+            &lt;label&gt; with &lt;input&gt; tag together. <br />The input tag
+            is also consists of
+            <ol>
+              <li>
+                &lt;input <span style="color: lightblue">type="text"</span>&gt;
+              </li>
+              <li>
+                &lt;input <span style="color: lightblue">value="John"</span>&gt;
+                <i style="font-size: 12px"
+                  >This is where "John" comes from even before we type it.</i
+                >
+              </li>
+              <li>
+                &lt;input <span style="color: lightblue">id="fname"</span>&gt;
+              </li>
+              <li>
+                &lt;input <span style="color: lightblue">name="fname"</span>&gt;
+              </li>
+            </ol>
+            and the &lt;label&gt; tag uses &lt;label
+            <span style="color: lightblue">for="fname"</span>&gt;
+          </i>
+        </li>
+      </ol>
     </div>
 
     <!-- Button Showcase -->
     <div class="mb box-shadow">
       <h1 class="centered">Button Showcase</h1>
-      <input type="button" value="Click Me!" />
-      <!-- Input has a lot of attributes, type="button" is one of it. The value="Click Me!" allows you to know what kind of Button it is-->
-      <button>Send Notification</button>
-      <!-- Normal <button> tag works the same as <input type="button" /> -->
-      <!-- We have two types of Button as well, there are <button> and <submit> -->
+      <ol>
+        <li>
+          <input type="button" value="Click Me!" />
+          <!-- Input has a lot of attributes, type="button" is one of it. The value="Click Me!" allows you to know what kind of Button it is-->
+          <i style="font-size: 12px"
+            >&lt;input&gt; has a lot of attributes, &lt;input
+            <span style="color: lightblue">type="button"</span>&gt; is one of
+            it. <br />The &lt;input
+            <span style="color: lightblue">value="Click Me!"</span>&gt; allows
+            it to put text on the Button.
+          </i>
+        </li>
+        <li>
+          <button>Send Notification</button>
+          <!-- Normal <button> tag works the same as <input type="button" /> -->
+          <!-- We have two types of Button as well, there are <button> and <submit> -->
+          <i style="font-size: 12px"
+            >Normal &lt;button&gt; tag works the same as &lt;input
+            <span style="color: lightblue">type="button"</span>&gt;</i
+          >
+        </li>
+      </ol>
     </div>
 
     <!-- Input type Showcase -->
     <div class="mb box-shadow" style="display: flex; flex-direction: column">
       <h1 class="centered">Different Kind of Input Type Showcase</h1>
       <form style="display: flex; flex-direction: column">
-        <div style="display: flex; flex-direction: row; align-items: center">
-          Date :<input
-            class="type"
-            type="date"
-            name="myDate"
-            id="myDate"
-            value="20 September 2023"
-          />
-        </div>
-        <div style="display: flex; flex-direction: row; align-items: center">
-          Email :<input
-            class="type"
-            type="email"
-            name="myEmail"
-            id="myEmail"
-            value="youremail@gmail.com"
-          />
-        </div>
-        <div style="display: flex; flex-direction: row; align-items: center">
-          Telephone :<input
-            class="type"
-            type="tel"
-            name="myTel"
-            id="myTel"
-            value="08XX - XXXX - XXXXs"
-          />
-        </div>
-        <div style="display: flex; flex-direction: row; align-items: center">
-          Your File :<input
-            class="type"
-            type="file"
-            name="myFile"
-            id="myFile"
-            value="yourfile.apk"
-          />
-        </div>
-        <div style="display: flex; flex-direction: row; align-items: center">
-          Password :
-          <input
-            class="type"
-            type="password"
-            name="myPass"
-            id="myPass"
-            value="********"
-          />
-        </div>
-        <div style="display: flex; flex-direction: row; align-items: center">
-          Number :
-          <input
-            class="type"
-            type="number"
-            name="myNumber"
-            id="myNumber"
-            value="99"
-          />
-        </div>
-        <div style="display: flex; flex-direction: row; align-items: center">
-          Enter Range :
-          <input
-            class="type"
-            type="range"
-            name="myRange"
-            id="myRange"
-            value="10"
-          />
-        </div>
-        <div style="display: flex; flex-direction: row; align-items: center">
-          <input
-            class="type"
-            type="hidden"
-            name="myHidden"
-            id="myHidden"
-            value="hidden"
-          />
-        </div>
+        <ol>
+          <li>
+            <section
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              Date :<input
+                class="type"
+                type="date"
+                name="myDate"
+                id="myDate"
+                value="20 September 2023"
+              />
+            </section>
+          </li>
+          <li>
+            <section
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              Email :<input
+                class="type"
+                type="email"
+                name="myEmail"
+                id="myEmail"
+                value="youremail@gmail.com"
+              />
+            </section>
+          </li>
+          <li>
+            <section
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              Telephone :<input
+                class="type"
+                type="tel"
+                name="myTel"
+                id="myTel"
+                value="08XX - XXXX - XXXXs"
+              />
+            </section>
+          </li>
+          <li>
+            <section
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              Your File :<input
+                class="type"
+                type="file"
+                name="myFile"
+                id="myFile"
+                value="yourfile.apk"
+              />
+            </section>
+          </li>
+          <li>
+            <section
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              Password :
+              <input
+                class="type"
+                type="password"
+                name="myPass"
+                id="myPass"
+                value="********"
+              />
+            </section>
+          </li>
+          <li>
+            <section
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              Number :
+              <input
+                class="type"
+                type="number"
+                name="myNumber"
+                id="myNumber"
+                value="99"
+              />
+            </section>
+          </li>
+          <li>
+            <section
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              Enter Range :
+              <input
+                class="type"
+                type="range"
+                name="myRange"
+                id="myRange"
+                value="10"
+              />
+            </section>
+          </li>
+          <li>
+            <section
+              style="display: flex; flex-direction: row; align-items: center"
+            >
+              <input
+                class="type"
+                type="hidden"
+                name="myHidden"
+                id="myHidden"
+                value="hidden"
+              />
+            </section>
+            <i style="font-size: 12px"
+              >This uses <span style="color: lightblue">type="hidden"</span></i
+            >
+          </li>
+        </ol>
       </form>
     </div>
 
@@ -135,53 +236,140 @@
     <div class="mb box-shadow">
       <h1 class="centered">Input Attributes Showcase</h1>
       <form>
-        Username :
-        <input
-          type="text"
-          id="username"
-          name="username"
-          value="John"
-          size="20"
-        />
-        <!-- Size 20 is the font-size, id and name shares the same use -->
-        <br /><br />
-        Nickname :
-        <input type="text" id="nickname" name="nickname" autofocus />
-        <!-- autofocus attributes uses to focus your Display to the designed autofocus, it will instantly moves you there -->
-        <br /><br />
-        Student ID :
-        <input
-          type="text"
-          id="studentId"
-          name="studentId"
-          value="001"
-          readonly
-        />
-        <!-- value is uses to assign value to the input-form, readonly uses so you have to fill all the other input before filling it -->
-        <br /><br />
-        Major :
-        <input type="text" id="major" name="major" value="IT" disabled />
-        <!-- disabled attributes makes you unable to modify input value -->
-        <br /><br />
-        Hobby :
-        <input
-          type="text"
-          id="hobby"
-          name="hobby"
-          placeholder="Swimming"
-          maxlength="20"
-          required
-        />
-        <!-- placeholder allows you to assign it, when you type something it will remove the placeholder -->
-        <!-- maxlength="20", is the max words allowed to type in a form -->
-        <!-- required attributes requires you to fill an input form -->
-        <br /><br />
-        Rate :
-        <input type="number" id="rate" name="rate" min="1" max="5" />
-        <!-- rate is assigning number, with min 1 and max 5 -->
-        <br /><br />
-        <input type="submit" value="Submit Form" />
-        <!-- If you change type="submit" into type="button", it will not work -->
+        <ol>
+          <li>
+            Username :
+            <input
+              type="text"
+              id="username"
+              name="username"
+              value="John"
+              size="20"
+            />
+            <!-- Size 20 is the font-size, id and name shares the same use -->
+            <br /><i style="font-size: 12px"
+              >This uses attributes called
+              <span style="color: lightblue">size="20"</span>, works the same as
+              font-size</i
+            ><br />
+          </li>
+          <li>
+            Nickname :
+            <input type="text" id="nickname" name="nickname" autofocus />
+            <!-- autofocus attributes uses to focus your Display to the designed autofocus, it will instantly moves you there -->
+            <br /><i style="font-size: 12px"
+              >This uses &lt;input
+              <span style="color: lightblue">autofocus</span>&gt; attributes, it
+              allows your Display to automatically scrolls to the designed
+              autofocus.</i
+            ><br />
+          </li>
+          <li>
+            Student ID :
+            <input
+              type="text"
+              id="studentId"
+              name="studentId"
+              value="001"
+              readonly
+            />
+            <!-- value is uses to assign value to the input-form, readonly uses so you have to fill all the other input before filling it -->
+            <br /><i style="font-size: 12px"
+              >&lt;input <span style="color: lightblue">value="001"</span>&gt;
+              use to assign value to the input-form first. <br />While &lt;input
+              <span style="color: lightblue">readonly</span>&gt; used so you
+              have to fill all the other input first before get to fill this
+              one.</i
+            ><br />
+          </li>
+          <li>
+            Major :
+            <input type="text" id="major" name="major" value="IT" disabled />
+            <!-- disabled attributes makes you unable to modify input value -->
+            <br /><i style="font-size: 12px"
+              >&lt;input <span style="color: lightblue">disabled</span>&gt;
+              makes you unable to modify input value</i
+            ><br />
+          </li>
+          <li>
+            Hobby :
+            <input
+              type="text"
+              id="hobby"
+              name="hobby"
+              placeholder="Swimming"
+              maxlength="20"
+              required
+            />
+            <!-- placeholder allows you to assign it, when you type something it will remove the placeholder -->
+            <!-- maxlength="20", is the max words allowed to type in a form -->
+            <!-- required attributes requires you to fill an input form -->
+            <br />
+            <ol>
+              <li>
+                <i style="font-size: 12px"
+                  >&lt;input
+                  <span style="color: lightblue">placeholder</span>&gt; allows
+                  you to assign something to it first, when you type something
+                  else it will instantly remove the placeholder.</i
+                >
+              </li>
+              <li>
+                <i style="font-size: 12px"
+                  >&lt;input
+                  <span style="color: lightblue">maxlength="20"</span>&gt; is
+                  the max words you're allowed to put and type in this form.
+                </i>
+              </li>
+              <li>
+                <i style="font-size: 12px"
+                  >&lt;input <span style="color: lightblue">required</span>&gt;
+                  attributes makes it so it requires you to fill this input
+                  form.</i
+                >
+              </li>
+            </ol>
+            <br />
+          </li>
+          <li>
+            Rate :
+            <input type="number" id="rate" name="rate" min="1" max="5" />
+            <!-- rate is assigning number, with min 1 and max 5 -->
+            <br />
+            <ol>
+              <li>
+                <i style="font-size: 12px"
+                  >&lt;input <span style="color: lightblue">rate</span>&gt; is
+                  used to assign number.</i
+                >
+              </li>
+              <li>
+                <i style="font-size: 12px"
+                  >&lt;input <span style="color: lightblue">min="1"</span>&gt;
+                  is used to tell the minimum number to assign is 1.</i
+                >
+              </li>
+              <li>
+                <i style="font-size: 12px"
+                  >&lt;input <span style="color: lightblue">max="5"</span>&gt;
+                  is used to tell the maximum number to assign is 5.
+                </i>
+              </li>
+            </ol>
+            <br />
+          </li>
+          <li>
+            <input type="submit" value="Submit Form" />
+            <!-- If you change type="submit" into type="button", it will not work -->
+            <br /><i style="font-size: 12px"
+              >&lt;input <span style="color: lightblue">type="submit"</span>&gt;
+              will Submit all the information to temporary HTML database.
+              <br />Fun Fact, if you put
+              <span style="color: lightblue">type="button"</span> will make it
+              don't work.</i
+            >
+          </li>
+        </ol>
       </form>
     </div>
 
@@ -189,127 +377,275 @@
     <div class="mb box-shadow">
       <h1 class="centered">Radio Showcase</h1>
       <p>Choose your favorite Web Language :</p>
-      <form>
-        <input type="radio" id="html" name="fav_language" value="HTML" />
-        <label for="html">HTML</label>
-        <input type="radio" id="css" name="fav_language" value="CSS" />
-        <label for="css">CSS</label>
-        <input
-          type="radio"
-          id="javascript"
-          name="fav_language"
-          value="JavaScript"
-        />
-        <label for="javavscript">JavaScript</label>
-        <!-- If you want to group the Radio Button into same Group, you have to use same Name -->
-        <!-- If not, the user will be able to toggle all of them, and not allowing you to uncheck it -->
-      </form>
+      <ol>
+        <form></form>
+        <li>
+          <input type="radio" id="html" name="fav_language" value="HTML" />
+          <label for="html">HTML</label>
+        </li>
+        <li>
+          <input type="radio" id="css" name="fav_language" value="CSS" />
+          <label for="css">CSS</label>
+        </li>
+        <li>
+          <input
+            type="radio"
+            id="javascript"
+            name="fav_language"
+            value="JavaScript"
+          />
+          <label for="javavscript">JavaScript</label>
+          <!-- If you want to group the Radio Button into same Group, you have to use same Name -->
+          <!-- If not, the user will be able to toggle all of them, and not allowing you to uncheck it -->
+        </li>
+        <i style="font-size: 12px"
+          >Please see HTML File for this, but if you want to group the Radio
+          Button, just use the same
+          <span style="color: lightblue">name="(samevalue)".</span><br />If not,
+          the user will be able to toggle all of them and not allowing you to
+          uncheck it.</i
+        >
+      </ol>
     </div>
 
     <div class="mb box-shadow">
       <h1 class="centered">CheckBox Introduction & Showcase</h1>
-      <form>
-        <input type="checkbox" id="toppingA" name="topping" value="Peanut" />
-        <label for="toppingA">Peanuts</label>
-        <input type="checkbox" id="toppingB" name="topping" value="Cookies" />
-        <label for="toppingB">Cookies</label>
-        <input type="checkbox" id="toppingC" name="topping" value="Almond" />
-        <label for="toppingC">Almonds</label>
-        <!-- Different from radio, checkbox provides separate values that user could choose as she/he would like to, -->
-      </form>
+      <ol>
+        <li>
+          <form>
+            <input
+              type="checkbox"
+              id="toppingA"
+              name="topping"
+              value="Peanut"
+            />
+            <label for="toppingA">Peanuts</label>
+            <input
+              type="checkbox"
+              id="toppingB"
+              name="topping"
+              value="Cookies"
+            />
+            <label for="toppingB">Cookies</label>
+            <input
+              type="checkbox"
+              id="toppingC"
+              name="topping"
+              value="Almond"
+            />
+            <label for="toppingC">Almonds</label>
+            <!-- Different from radio, checkbox provides separate values that user could choose as she/he would like to, -->
+          </form>
+        </li>
+        <i style="font-size: 12px"
+          >A little bit difference between &lt;radio&gt; tag and
+          &lt;checkbox&gt; tag is that &lt;checkbox&gt; tag provides separate
+          values that the user could choose as much or as the user want to.
+        </i>
+      </ol>
     </div>
 
     <!-- To make sure that our radio buttons provide different choices, we MUST give it the same Name -->
 
     <div class="mb box-shadow">
       <h1 class="centered">Option Showcase</h1>
-      <label for="cars">Choose a Car :</label>
-      <select id="cars" name="cars">
-        <option value="volvo">Volvo</option>
-        <option value="toyota">Toyota</option>
-        <option value="fiat" selected>Fiat</option>
-        <option value="audi">Audi</option>
-        <!-- Theres a special attributes for option, it is selected, to make the options instantly select the destined option -->
-        <!-- works as a hidden scrolled button, you can change the assigned option, can put as many options as possible. -->
-      </select>
+      <ol>
+        <li>
+          <label for="cars">Choose a Car :</label>
+          <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="toyota">Toyota</option>
+            <option value="fiat" selected>Fiat</option>
+            <option value="audi">Audi</option>
+            <!-- Theres a special attributes for option, it is selected, to make the options instantly select the destined option -->
+            <!-- works as a hidden scrolled button, you can change the assigned option, can put as many options as possible. -->
+          </select>
+        </li>
+        <i style="font-size: 12px"
+          >&lt;select&gt; tag will nests &lt;option&gt; tag, and &lt;option&gt;
+          tag is basically the values that is put into the &lt;select&gt; tag.
+          <br />&lt;option <span style="color: lightblue">selected</span>&gt;
+          tag will make the option instantly chooses the one with attributes
+          <span style="color: lightblue">selected</span>.
+        </i>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
       <h1 class="centered">Option Showcase with Multiple Attributes</h1>
-      <label for="cars">Choose a Car :</label>
-      <select id="cars" name="cars" multiple>
-        <!-- multiple attributes allows you to choose multiple option, the way to choose is you hold CTRL button and LMB (Left Mouse Button) -->
-        <option value="volvo">Volvo</option>
-        <option value="toyota">Toyota</option>
-        <option value="fiat" selected>Fiat</option>
-        <option value="audi">Audi</option>
-        <!-- Theres a special attributes for option, it is selected, to make the options instantly select the destined option -->
-        <!-- works as a hidden scrolled button, you can change the assigned option, can put as many options as possible. -->
-      </select>
+      <ol>
+        <li>
+          <label for="cars">Choose a Car :</label>
+          <select id="cars" name="cars" multiple>
+            <!-- multiple attributes allows you to choose multiple option, the way to choose is you hold CTRL button and LMB (Left Mouse Button) -->
+            <option value="volvo">Volvo</option>
+            <option value="toyota">Toyota</option>
+            <option value="fiat" selected>Fiat</option>
+            <option value="audi">Audi</option>
+            <!-- Theres a special attributes for option, it is selected, to make the options instantly select the destined option -->
+            <!-- works as a hidden scrolled button, you can change the assigned option, can put as many options as possible. -->
+          </select>
+        </li>
+        <i style="font-size: 12px"
+          >Just the same as before, but now with more attributes, which are
+          <ol>
+            <li>
+              <i style="font-size: 12px"
+                >&lt;select <span style="color: lightblue">multiple</span>&gt;
+                tag now allows you to choose multiple choices, the way to choose
+                multiple options is to hold <span><kbd>CTRL</kbd></span> button
+                on your Keyboard.</i
+              >
+            </li>
+          </ol></i
+        >
+      </ol>
     </div>
 
     <!-- Optgroup Showcase -->
     <div class="mb box-shadow">
       <h1 class="centered">Optgroup Showcase</h1>
-      <label for="cars">Choose a car:</label>
-      <select name="cars" id="cars">
-        <optgroup label="Japan Cars">
-          <option value="toyota">Toyota</option>
-          <option value="honda">Honda</option>
-        </optgroup>
-        <optgroup label="German Cars">
-          <option value="mercedes">Mercedes</option>
-          <option value="bmw">BMW</option>
-        </optgroup>
-        <!-- Basically creates a group inside of a Selection, not really important but it helps sometimes, who knows -->
-      </select>
+      <ol>
+        <li>
+          <label for="cars">Choose a car:</label>
+          <select name="cars" id="cars">
+            <optgroup label="Japan Cars">
+              <option value="toyota">Toyota</option>
+              <option value="honda">Honda</option>
+            </optgroup>
+            <optgroup label="German Cars">
+              <option value="mercedes">Mercedes</option>
+              <option value="bmw">BMW</option>
+            </optgroup>
+            <!-- Basically creates a group inside of a Selection, not really important but it helps sometimes, who knows -->
+          </select>
+        </li>
+        <i style="font-size: 12px"
+          >Still the same as before, just now with &lt;optgroup&gt; tag nesting
+          the &lt;option&gt; tag. <br />Works as a Label, to Contain each
+          Option, so it works like
+          <ol>
+            <li>
+              &lt;optgroup&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;<br />&lt;optgroup&gt;
+            </li>
+          </ol>
+          So it contains by a variable name by using label, example is
+          &lt;optgroup
+          <span style="color: lightblue">label="German Cars"</span>&gt;
+        </i>
+      </ol>
     </div>
 
     <!-- Textarea Showcase -->
     <div class="mb box-shadow">
       <h1 class="centered">Textarea Showcase</h1>
-      <label for="web_programming">How Web Programming is :</label>
-      <textarea id="web_programming" name="web_programming" rows="4" cols="50">
-        Learn Web Programming they say, it will be easy they say.
-      </textarea>
-      <!-- Also everything you put is literally be in there, even comments -->
-      <!-- If you open it and you see its Spaced, because text area takes everything literally, if you remove the Tab space, it will be no space -->
+      <ol>
+        <li>
+          <label for="web_programming">How Web Programming is :</label>
+          <textarea
+            id="web_programming"
+            name="web_programming"
+            rows="4"
+            cols="50"
+          >
+            Learn Web Programming they say, it will be easy they say.
+          </textarea>
+          <!-- Also everything you put is literally be in there, even comments -->
+          <!-- If you open it and you see its Spaced, because text area takes everything literally, if you remove the Tab space, it will be no space -->
 
-      <!-- Textarea is special, therefore everything that is put inside textarea is preserved, its pre tag -->
-      <!-- Textarea is an area where it can be modified in width and height. -->
+          <!-- Textarea is special, therefore everything that is put inside textarea is preserved, its pre tag -->
+          <!-- Textarea is an area where it can be modified in width and height. -->
+          <ol>
+            <li>
+              <i style="font-size: 12px"
+                >Everything you put in &lt;textarea&gt; will be there, including
+                HTML Comments.</i
+              >
+            </li>
+            <li>
+              <i style="font-size: 12px"
+                >If you open it and see its Spaced, that's because text area
+                takes everything literally and if you remove the Tab Space in
+                HTML, there will be no Space either.</i
+              >
+            </li>
+            <li>
+              <i style="font-size: 12px"
+                >&lt;textarea&gt; tag is special, therefore everything that is
+                put inside a &lt;textarea&gt; is preserved, it's basically
+                preserved textarea.
+              </i>
+            </li>
+            <li>
+              <i style="font-size: 12px"
+                >&lt;textarea&gt; is an area where it can be modified freely in
+                HTML Website in terms of width and height.
+              </i>
+            </li>
+          </ol>
+        </li>
+      </ol>
     </div>
 
     <!-- Fieldset and Legend Showcase -->
     <div class="mb box-shadow">
-      <form>
-        <fieldset>
-          <!-- The <fieldset> is the whole box -->
-          <legend>Personalia :</legend>
-          <!-- the <legend>is the name inbetween box -->
-          <label for="fname">First Name :</label>
-          <input type="text" id="fname" name="fname" value="John" />
-          <label for="lname">Last Name :</label>
-          <input type="text" id="lname" name="lname" value="Doe" />
-          <input type="submit" value="Submit" />
-        </fieldset>
-      </form>
+      <h1 class="centered">Fieldset and Legend Showcase.</h1>
+      <ol>
+        <li>
+          <form>
+            <fieldset>
+              <!-- The <fieldset> is the whole box -->
+              <legend>Personalia :</legend>
+              <!-- the <legend>is the name inbetween box -->
+              <label for="fname">First Name :</label>
+              <input type="text" id="fname" name="fname" value="John" />
+              <label for="lname">Last Name :</label>
+              <input type="text" id="lname" name="lname" value="Doe" />
+              <input type="submit" value="Submit" />
+            </fieldset>
+          </form>
+          <ol>
+            <li>
+              <i style="font-size: 12px"
+                >The &lt;fieldset&gt; tag is the whole box seen in HTML
+                Website.</i
+              >
+            </li>
+            <li>
+              <i style="font-size: 12px"
+                >While the &lt;legend&gt; tag is the name inbetween box that now
+                you see as a text called "Personalia :"
+              </i>
+            </li>
+          </ol>
+        </li>
+      </ol>
     </div>
     <!-- If you want to group several inputs inside of a group, you can split it and put it in separate groups by using Fieldset -->
 
     <!-- Datalist Showcase -->
     <div class="mb box-shadow">
       <h1 class="centered">Datalist Showcase</h1>
-      <form>
-        <input list="browsers" name="browser" />
-        <datalist id="browsers">
-          <option value="Internet Explorer"></option>
-          <option value="Firefox"></option>
-          <option value="Chrome"></option>
-          <option value="Opera"></option>
-          <option value="Safari"></option>
-        </datalist>
-        <!-- Basically Options, but with Data inside, it's like Options with Suggestions -->
-      </form>
+      <ol>
+        <li>
+          <form>
+            <input list="browsers" name="browser" />
+            <datalist id="browsers">
+              <option value="Internet Explorer"></option>
+              <option value="Firefox"></option>
+              <option value="Chrome"></option>
+              <option value="Opera"></option>
+              <option value="Safari"></option>
+            </datalist>
+            <!-- Basically Options, but with Data inside, it's like Options with Suggestions -->
+          </form>
+        </li>
+        <i style="font-size: 12px"
+          >This is basically &lt;option&gt; tag, but with Data inside. therefore
+          it can suggests and works like Keyboard Autocorrect. <br />It uses
+          &lt;datalist&gt; tag nesting the &lt;option&gt; tag.
+        </i>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
@@ -318,6 +654,10 @@
         class="centered"
         style="text-decoration: none; color: currentColor"
         ><h1>CLICK ME TO SEE FRAME SHOWCASE</h1></a
+      >
+      <i class="centered" style="font-size: 18px"
+        >Please click the link above to see &lt;frameset&gt; and &lt;frame&gt;
+        Showcase.</i
       >
     </div>
   </body>

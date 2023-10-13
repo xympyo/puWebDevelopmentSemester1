@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Apparently <meta> tags has a lot of attributes, such as keywords author and description.-->
-    <title>First Week of Website Development</title>
+    <title>
+      President University Website Programming Summary | Week 1 | Moshe Dayan
+    </title>
 
     <!-- PLEASE DO NOT SEE THE INSIDE OF 3 COMMENTED WARNING SINCE IT IS UNNECESSARY! ( STYLING ) -->
     <!-- PLEASE DO NOT SEE THE INSIDE OF 3 COMMENTED WARNING SINCE IT IS UNNECESSARY! ( STYLING ) -->
@@ -21,6 +23,17 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .headingShowcase {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+      }
+      .ml-auto {
+        margin-left: auto;
+      }
+    </style>
   </head>
   <body>
     <!-- Ignore <div class="centered"><h1> (content) </h1></div> -->
@@ -32,51 +45,109 @@
       <h1>Week 1 of Website Development President University</h1>
     </div>
     <!-- Introduce to Heading -->
-    <div class="display-none mb box-shadow">
+    <div class="mb box-shadow">
       <div class="centered"><h1>Introduction to Heading</h1></div>
-      <h1>Web Programming</h1>
-      <h2>Web Programming</h2>
-      <h3>Web Programming</h3>
-      <h4>Web Programming</h4>
-      <h5>Web Programming</h5>
-      <h6>Web Programming</h6>
-      <!--<h(number)> tags is Heading Text-->
-      Test
-      <!--Although "Test" is bigger than <h6>, it is considered more important.-->
+      <section class="headingShowcase">
+        <h1>Web Programming</h1>
+        <p class="ml-auto">(This uses h1 tag)</p>
+      </section>
+      <section class="headingShowcase">
+        <h2>Web Programming</h2>
+        <p class="ml-auto">(This uses h2 tag)</p>
+      </section>
+      <section class="headingShowcase">
+        <h3>Web Programming</h3>
+        <p class="ml-auto">(This uses h3 tag)</p>
+      </section>
+      <section class="headingShowcase">
+        <h4>Web Programming</h4>
+        <p class="ml-auto">(This uses h4 tag)</p>
+      </section>
+      <section class="headingShowcase">
+        <h5>Web Programming</h5>
+        <p class="ml-auto">(This uses h5 tag)</p>
+      </section>
+      <section class="headingShowcase">
+        <h6>Web Programming</h6>
+        <p class="ml-auto">(This uses h6 tag)</p>
+      </section>
+      <div style="padding: 14px">
+        <section
+          style="display: flex; flex-direction: row; align-items: center"
+        >
+          <!--<h(number)> tags is Heading Text-->
+          This is html text
+          <h6 style="margin-left: 30px">This is h6 text</h6>
+          <!--Although "Test" is bigger than <h6>, it is considered more important.-->
+        </section>
+        <p style="margin-top: 0; font-size: 12px">
+          Although html text is bigger than the h6 text, h6 text is considered
+          more important
+        </p>
+      </div>
     </div>
 
     <!-- Introduction to Paragraph -->
     <div class="mb box-shadow">
       <div class="centered"><h1>Introduction to Paragraph</h1></div>
-      <hgroup class="mb box-shadow">
-        <h1>Sports</h1>
-        <h2>in ESPN</h2>
-      </hgroup>
-      <!-- <hgroup> is a grouping, i'm guessing it works like <div> -->
-      <p class="">This is a paragraph</p>
-      <!-- As you know, <p> stands for paragraph -->
-      <p>
-        This is an example intended to "br" tag example <br />
-        I'm handsome
-      </p>
-      <!-- <br/> is a self closing tag, like you uses every time -->
-      <p>This is an example intended to &lt;hr&gt; line</p>
-      <hr />
-      <!-- <hr/> is used to make a straight vertical line, you learn new things everyday. -->
+      <ol>
+        <li>
+          <hgroup style="padding: 12px; border: 1px solid #1d1d1d">
+            <h1>Sports</h1>
+            <h2>in ESPN</h2>
+            <h6>
+              This uses &lt;hgroup&gt; tag!, it works the same as &lt;div&gt;
+            </h6>
+          </hgroup>
+          <!-- <hgroup> is a grouping, i'm guessing it works like <div> -->
+        </li>
+        <li>
+          <p>
+            This is a paragraph
+            <span style="font-size: 12px; margin-left: 8px"
+              >&lt;p&gt; tag stands for "Paragraph".</span
+            >
+          </p>
+          <!-- As you know, <p> stands for paragraph -->
+        </li>
+        <li>
+          <p style="display: flex; flex-direction: column">
+            This is an example intended to &lt;br&gt; tag example <br />
+            I'm handsome
+            <span style="font-size: 12px">Please see html file for this!</span>
+          </p>
+          <!-- <br/> is a self closing tag, like you uses every time -->
+        </li>
+        <li>
+          <p>This is an example intended to &lt;hr&gt; line</p>
+          <p style="font-size: 12px">
+            As you can see, it literally just put horizontal line! (&lt;hr&gt;
+            literally means horizontal!)
+            <!-- <hr/> is used to make a straight vertical line, you learn new things everyday. -->
+          </p>
+          <hr />
+        </li>
+      </ol>
     </div>
 
     <!-- Pre Showcase -->
     <div class="mb box-shadow">
       <div class="centered"><h1>Showcase of &lt;pre&gt; tag</h1></div>
-      <pre>
-        <p>
-            This is a text intended 
-            for 
-            &lt;pre&gt; tag
-            <!-- <pre><pre/> is used for HTML to show the text as "how it is" -->
-                <!-- monospace font is when each font has the same length -->
-        </p>
-    </pre>
+      <ol>
+        <li>
+          <pre>
+          <p>
+              This is a text intended 
+              for &lt;pre&gt; wow       no way!
+              <span style="font-size: 12px;">
+                &lt;pre&gt; tag is used to tell HTML "Show the text as how it is, if I put "Enter" then put enter, if I put "Space" then put Space
+              </span>
+              <!-- <pre><pre/> is used for HTML to show the text as "how it is" -->
+                  <!-- monospace font is when each font has the same length -->
+          </p>
+      </pre>
+        </li>
+      </ol>
     </div>
 
     <!-- Paragraph Formatting -->
@@ -84,67 +155,242 @@
       <div class="centered">
         <h1>Showcase of Multiple Paragraph Formatting</h1>
       </div>
-      <p>
-        This text is inteded to showcase &lt;<b>b</b>&gt; tag and
-        &lt;<strong>strong</strong>&gt; tag
-      </p>
-      <!-- <b><b/> is for "bold" and <strong></strong> is for strong word, to help Google Track the Website-->
-
-      <p>
-        This tag is to showcase &lt;<i>i</i>&gt; tag and &lt;<em>em</em>&gt; tag
-      </p>
-      <!-- <i><i/> is used to Italic words, but <em></em> is emphaized uses to help Google Track the Website as well -->
-
-      <p>
-        This tag is to showcase &lt;<u>u</u>&gt; tag and &lt;<ins>ins</ins>&gt;
-        tag
-      </p>
-
-      <!-- <u><u/> is used to underline text, while <ins></ins> is also uses to help Google Track the Website-->
-
-      <p>
-        This tag is to showcase &lt;<s>s</s>&gt; tag and &lt;<del>del</del>&gt;
-        tag
-      </p>
-      <!-- <s></s> is used to strikethrough text, while <del></del> means Delete. -->
-
-      <p>
-        This tag is to showcase &lt;<cite>cite</cite>&gt; tag and
-        &lt;<mark>mark</mark>&gt; tag
-      </p>
-      <!-- <cite></cite> is used to cite text, while <mark></mark> uses to highlight text -->
+      <ol>
+        <li>
+          <section>
+            <p>
+              This text is inteded to showcase &lt;<b>b</b>&gt; tag and
+              &lt;<strong>strong</strong>&gt; tag
+            </p>
+            <ol>
+              <li>
+                <p>
+                  For example for &lt;b&gt; tag is <br /><span
+                    ><b>Wow I'm so cool!</b></span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  For example for &lt;strong&gt; tag is <br /><span
+                    ><strong>Wow I'm also cool!</strong></span
+                  >
+                </p>
+              </li>
+            </ol>
+            <!-- <b><b/> is for "bold" and <strong></strong> is for strong word, to help Google Track the Website-->
+          </section>
+        </li>
+        <li>
+          <section>
+            <p>
+              This tag is to showcase &lt;<i>i</i>&gt; tag and
+              &lt;<em>em</em>&gt; tag
+            </p>
+            <ol>
+              <li>
+                <p>
+                  For example for &lt;i&gt; tag is <br /><span
+                    ><i
+                      >I got depressed everytime I'm attending Calculus</i
+                    ></span
+                  >
+                </p>
+              </li>
+              <li>
+                For example for &lt;em&gt;tag is<br /><span
+                  ><em
+                    >I got not so depressed when Discrete Math, it's actually
+                    fun!</em
+                  ></span
+                >
+              </li>
+            </ol>
+            <!-- <i><i/> is used to Italic words, but <em></em> is emphaized uses to help Google Track the Website as well -->
+          </section>
+        </li>
+        <li>
+          <section>
+            <p>
+              This tag is to showcase &lt;<u>u</u>&gt; tag and
+              &lt;<ins>ins</ins>&gt; tag
+            </p>
+            <!-- <u><u/> is used to underline text, while <ins></ins> is also uses to help Google Track the Website-->
+            <ol>
+              <li>
+                <p>
+                  For example for &lt;u&gt;tag is <br /><span
+                    ><u>Wow, Calculus is VERY hard at first.</u></span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  For example for &lt;ins&gt;tag is<br /><span
+                    ><ins
+                      >Although I'm saying it hard at first, I still find it
+                      quite difficult after studying for minimum 30 minutes
+                      everyday.</ins
+                    ></span
+                  >
+                </p>
+              </li>
+            </ol>
+          </section>
+        </li>
+        <li>
+          <section>
+            <p>
+              This tag is to showcase &lt;<s>s</s>&gt; tag and
+              &lt;<del>del</del>&gt; tag
+            </p>
+            <!-- <s></s> is used to strikethrough text, while <del></del> means Delete. -->
+            <ol>
+              <li>
+                <p>
+                  For example for &lt;s&gt;tag is<br /><span
+                    ><s
+                      >Did you know, this Website took theoretically 6 Weeks and
+                      keep going?</s
+                    ></span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  For example for &lt;del&gt;tag is<br /><span
+                    ><del
+                      >Well, until Semester 1 is completed that is.</del
+                    ></span
+                  >
+                </p>
+              </li>
+            </ol>
+          </section>
+        </li>
+        <li>
+          <section>
+            <p>
+              This tag is to showcase &lt;<cite>cite</cite>&gt; tag and
+              &lt;<mark>mark</mark>&gt; tag
+            </p>
+            <!-- <cite></cite> is used to cite text, while <mark></mark> uses to highlight text -->
+            <ol>
+              <li>
+                For example for &lt;cite&gt;tag is<br /><span
+                  ><cite
+                    >Do you know that sometimes I'm rethinking my life decision
+                    by choosing this Major?</cite
+                  ></span
+                >
+              </li>
+              <li>
+                For example for &lt;mark&gt;tag is<br /><span
+                  ><mark
+                    >Do you know that I'm typing this as per 11:27 PM and
+                    probably will keep going until God knows when?</mark
+                  ></span
+                >
+              </li>
+            </ol>
+          </section>
+        </li>
+      </ol>
     </div>
 
     <!-- Small, Sub, Sup-->
     <div class="mb box-shadow">
       <div class="centered"><h1>Showcase Small, Sub, Sup Tag</h1></div>
-      <p>This text is used to showcase &lt;<small>small</small>&gt; tag</p>
-      <p>This text is used to showcase H<sub>2</sub>0</p>
-      <!-- <sub> is for Superscript Bottom -->
-      <p>This text is used to showcase e = mc<sup>2</sup></p>
-      <!-- <sup> is for Superscript Upper -->
+      <ol>
+        <li>
+          <p>This text is used to showcase &lt;small&gt; tag</p>
+          <ol>
+            <li>
+              <small
+                >Wow, theoretically I am nothing amongst the big stars.</small
+              >
+            </li>
+          </ol>
+        </li>
+        <li>
+          <p>This text is used to showcase H<sub>2</sub>0</p>
+          <p style="font-size: 12px">
+            &lt;sub&gt;tag is for Superscript Bottom!
+          </p>
+          <!-- <sub> is for Superscript Bottom -->
+        </li>
+        <li>
+          <p>This text is used to showcase e = mc<sup>2</sup></p>
+          <p style="font-size: 12px">
+            &lt;sup&gt;tag is for Superscript Bottom!
+          </p>
+          <!-- <sup> is for Superscript Upper -->
+        </li>
+      </ol>
     </div>
 
     <!-- Span Showcase -->
     <div class="mb box-shadow">
       <div class="centered"><h1>Small Introduction to Span Tag</h1></div>
-      <p>Web Programming is <span>fun</span></p>
-      <!-- <span> is used to divide text, you do it all the time -->
+      <ol>
+        <li>
+          <p>Web Programming is <span>fun</span></p>
+          <ul>
+            <li>
+              <p style="font-size: 12px">
+                Wait, but nothing happened?<br />Well if you see in the html
+                tag, it uses span to divide text into two, for example :
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    I am
+                    <span style="font-weight: bolder; color: red">very</span>
+                    cool!
+                  </p>
+                </li>
+              </ol>
+            </li>
+          </ul>
+          <!-- <span> is used to divide text, you do it all the time -->
+        </li>
+      </ol>
     </div>
 
     <!-- Quotation Showcase -->
     <div class="mb box-shadow">
       <div class="centered"><h1>Showcase of Quotation</h1></div>
-      <p>Computing : <q>Be Strong One Determination</q></p>
+      <ol>
+        <li>
+          <p>Computing : <q>Be Strong One Determination</q></p>
+          <p style="font-size: 12px">
+            I use &lt;q&gt;tag instead of using normal quotation in my Keyboard!
+          </p>
+        </li>
+      </ol>
     </div>
 
     <!-- Abbriviation Tag Showcase -->
     <div class="mb box-shadow">
       <div class="centered"><h1>Showcase of Abbrivation Tag</h1></div>
-      <p>
-        This tag is used to showcase <abbr title="Abbriviation">abbr</abbr> tag
-      </p>
-      <!-- Abbriviation or in Bahasa it is "Singkatan" -->
+      <ol>
+        <li>
+          <p>
+            This tag is used to showcase
+            <abbr
+              style="pointer-events: fill"
+              title="You're so beautiful you shouldn't be ashamed of yourself!"
+              >YSBYSBAOYS</abbr
+            >
+            &lt;abbr&gt;tag!
+          </p>
+          <p>
+            &lt;abbr&gt;tag or in Bahasa its "Singkatan" can be used to hide
+            words or to hide the literal meaning that is too long!
+          </p>
+          <!-- Abbriviation or in Bahasa it is "Singkatan" -->
+        </li>
+      </ol>
     </div>
 
     <!-- <code> Tag showcase -->
@@ -152,23 +398,51 @@
       <div class="centered">
         <h1>&lt;code&gt; Tag Showcase and &lt;samp&gt; Tag Showcase</h1>
       </div>
-      <code>System.out.println("Hello World");</code>
-      <samp>System.out.println("Hello Again");</samp>
+      <ol>
+        <li>
+          <code>System.out.println("Hello World");</code>
+        </li>
+        <li>
+          <samp>System.out.println("Hello Again");</samp>
+          <p style="font-size: 12px">
+            Although it feels different, from &lt;code&gt;tag to
+            &lt;samp&gt;tag, they still share the same function!
+          </p>
+        </li>
+      </ol>
       <!-- Code and Samp works the same, uses to display code script -->
     </div>
 
     <!-- <kbd> Tag Showcase -->
     <div class="mb box-shadow">
       <div class="centered"><h1>&lt;kbd&gt; Tag Showcase</h1></div>
-      <p>To save File : <kbd>CTRL + S</kbd></p>
-      <!-- <kbd> also means Keyboard -->
+      <ol>
+        <li>
+          <p>To save File : <kbd>CTRL + S</kbd></p>
+          <!-- <kbd> also means Keyboard -->
+          <p style="font-size: 12px">
+            Although it feels like nothing happened, &lt;kbd&gt; tag means
+            Keyboard!, therefore it tells HTML that we will display Keyboard
+            Text!
+          </p>
+        </li>
+      </ol>
     </div>
 
     <!-- <var> Tag Showcase -->
     <div class="mb box-shadow">
       <div class="centered"><h1>&lt;var&gt; Tag Showcase</h1></div>
-      <var>y = x<sup>2</sup> + 1</var>
-      <!-- <var> means Equation, also Italic basically, but <var> uses solely for Equation purposes-->
+      <ol>
+        <li>
+          <var>y = x<sup>2</sup> + 1</var>
+          <p style="font-size: 12px">
+            &lt;var&gt; tag means Equation, it is basically Italic but
+            &lt;var&gt; tag uses solely for Equation purposes!
+            <span><i>or also means Variable</i></span>
+          </p>
+          <!-- <var> means Equation, also Italic basically, but <var> uses solely for Equation purposes-->
+        </li>
+      </ol>
     </div>
 
     <!-- Space Showcase -->
@@ -176,52 +450,113 @@
       <div class="centered">
         <h1>Space Smybol or &amp; in HTML Showcase</h1>
       </div>
-      <p>Web Programming</p>
-      <small
-        >No matter how much space you put, it output the same as one
-        space.</small
-      >
-      <!-- Doesn't matter how much space you put, it will be the same. -->
-      <p>Web &nbsp; Programming</p>
-      <!-- Space Symbol is &nbsp; and it means Non Breaking Space -->
+      <ol>
+        <li>
+          <p>Web Programming</p>
+          <small
+            >No matter how much space you put, it output the same as one
+            space.</small
+          >
+          <p style="font-size: 12px">
+            If you edit the HTML file and put as many space as you can, it won't
+            read the space.
+          </p>
+          <!-- Doesn't matter how much space you put, it will be the same. -->
+        </li>
+        <li>
+          <p>Web &nbsp; Programming</p>
+          <!-- Space Symbol is &nbsp; and it means Non Breaking Space -->
+          <p style="font-size: 12px">
+            &amp;nbsp; means Non Breaking Space, it will basically put "Tab" in
+            your Keyboard as Text on your HTML.
+          </p>
+        </li>
+      </ol>
     </div>
 
     <!-- Symbols Showcase -->
     <div class="mb box-shadow">
       <div class="centered"><h1>Symbols Showcase</h1></div>
-      <p>This one showcases &copy; and &yen;</p>
-      <!-- &copy; is for copyright and &yen; is for Japan Currency -->
-      <p>Line break is &lt; br/ &gt;</p>
-      <!-- &lt; is for for less than and &gt; is for greater than. -->
-      <p>&#128517;</p>
-      <!-- You can put Emoji on HTML Code, You uses #(codes) -->
+      <ol>
+        <li>
+          <p>This one showcases &copy; and &yen;</p>
+          <p style="font-size: 12px">
+            &amp;copy; is for <i>Copyright</i> and &amp;yen; is for
+            <i>Japan Currency</i>
+          </p>
+          <!-- &copy; is for copyright and &yen; is for Japan Currency -->
+        </li>
+        <li>
+          <p>Line break is &lt; br/ &gt;</p>
+          <p style="font-size: 12px">
+            <i
+              >&lt;br/&gt;is used to put "Enter" on your Keyboard to HTML
+              Website.</i
+            >
+          </p>
+          <!-- &lt; is for for less than and &gt; is for greater than. -->
+        </li>
+        <li>
+          <p>&#128517;</p>
+          <p style="font-size: 12px">
+            You can put emoji's on HTML Codes, you use #(codes)!
+            <i>(see HTML emoji documentation for more emojis)</i>
+          </p>
+          <!-- You can put Emoji on HTML Code, You uses #(codes) -->
+        </li>
+      </ol>
     </div>
 
     <!-- Blockquote Showcase -->
     <div class="mb box-shadow">
       <div class="centered"><h1>&lt;blockquote&gt; Tag Showcase</h1></div>
-      Shakespeare said
-      <blockquote>To be or not to be.</blockquote>
-      <!-- To quote with margins -->
+      <ol>
+        <li>
+          Shakespeare said
+          <blockquote>
+            To be or not to be. <br />
+            <i style="font-size: 12px">
+              &lt;blockquote&gt;is to quote using Margin.
+            </i>
+          </blockquote>
+          <!-- To quote with margins -->
+        </li>
+      </ol>
     </div>
 
     <!-- Address Showcase -->
     <div class="mb box-shadow">
       <div class="centered"><h1>&lt;address&gt; Tag Showcase</h1></div>
-      <address>New Beverly Hills Student Housing</address>
-      <!-- Tells the user and HTML that this thing is Address -->
+      <ol>
+        <li>
+          <address>New Beverly Hills Student Housing</address>
+          <i style="font-size: 12px"
+            >Although it looks like it doesn't do anything, it tells HTML that
+            this refers to Address.</i
+          >
+          <!-- Tells the user and HTML that this thing is Address -->
+        </li>
+      </ol>
     </div>
 
     <!-- Details and Summary Showcase -->
     <div class="mb box-shadow">
       <div class="centered"><h1>Details and Summary Showcase</h1></div>
-      <details>
-        <summary>Web Programming :</summary>
-        <!-- Summary is like the Title for Details, remove it and you got "Details" Only -->
-        HTML <br />
-        CSS <br />
-        JS <br />
-      </details>
+      <ol>
+        <li>
+          <details>
+            <summary>Web Programming :</summary>
+            <!-- Summary is like the Title for Details, remove it and you got "Details" Only -->
+            HTML <br />
+            CSS <br />
+            JS <br />
+          </details>
+          <p style="font-size: 12px">
+            &lt;summary&gt; tag is like the Title for Details, remove it and you
+            will get HTML Placeholder "Details" only
+          </p>
+        </li>
+      </ol>
       <!-- To make an onClick() Function to Hide and Show stuff. -->
     </div>
 
@@ -231,42 +566,92 @@
         <h1>Unordered List(UL) and Ordered List (OR) Showcase</h1>
       </div>
       <!-- Unordered List Showcase-->
-      <ul class="mb1">
-        <li>Bink's no Sake Wo</li>
-        <li>I forgot the next Lyrics~</li>
-        <li>Kamikaze, Namikaze, Naminakaze</li>
-        <!-- In Microsoft Word, it's the same as Bullets and Numbering-->
-      </ul>
-      <!-- Ordered List Showcase -->
-      <ol class="mb1">
-        <li>Da da da da da da</li>
-        <li>Da da da</li>
-        <li>A hopeless romantic all my life~</li>
-      </ol>
-      <ol class="mb1" type="A">
-        <li>This is</li>
-        <li>To revieww Ordered List type uppercase Alphabets</li>
-      </ol>
-      <ol class="mb1" type="a">
-        <li>This is</li>
-        <li>To review Ordered List type lowercase Alphabets</li>
-      </ol>
-      <ol class="mb1" type="I">
-        <li>This is</li>
-        <li>To review Ordered List type Roman Numberal Uppercase</li>
-      </ol>
-      <ol class="mb1" type="i">
-        <li>This is</li>
-        <li>To review Ordered List type uppercase Alphabets</li>
+      <ol>
+        <ol>
+          <li>
+            <p>This is to showcase Unordered List or &lt;ul&gt; tag</p>
+            <ol>
+              <li>
+                <ul class="mb1">
+                  <li>Bink's no Sake Wo</li>
+                  <li>I forgot the next Lyrics~</li>
+                  <li>Kamikaze, Namikaze, Naminakaze</li>
+                  <!-- In Microsoft Word, it's the same as Bullets and Numbering-->
+                </ul>
+              </li>
+            </ol>
+          </li>
+        </ol>
+        <ol>
+          <li>
+            <p>
+              This is to showcase different variety of Ordered List or
+              &lt;ol&gt; tag
+            </p>
+            <ol>
+              <li>
+                <!-- Ordered List Showcase -->
+                <ol class="mb1">
+                  <li>Da da da da da da</li>
+                  <li>Da da da</li>
+                  <li>A hopeless romantic all my life~</li>
+                </ol>
+              </li>
+              <li>
+                <ol class="mb1" type="A">
+                  <li>This is</li>
+                  <li>To revieww Ordered List type uppercase Alphabets</li>
+                </ol>
+              </li>
+              <li>
+                <ol class="mb1" type="a">
+                  <li>This is</li>
+                  <li>To review Ordered List type lowercase Alphabets</li>
+                </ol>
+              </li>
+              <li>
+                <ol class="mb1" type="I">
+                  <li>This is</li>
+                  <li>To review Ordered List type Roman Numberal Uppercase</li>
+                </ol>
+              </li>
+              <li>
+                <ol class="mb1" type="i">
+                  <li>This is</li>
+                  <li>To review Ordered List type uppercase Alphabets</li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+        </ol>
       </ol>
     </div>
 
     <!-- Hyperlink (Anchor) Showcase-->
     <div class="mb box-shadow">
       <div class="centered"><h1>Introduction to &lt;a&gt; Tag in HTML</h1></div>
-      <a href="https://puis.president.ac.id/" target="_blank"
-        >This is for PUIS Website</a
-      >
+      <ol>
+        <li>
+          <ol>
+            <li>
+              <a href="https://puis.president.ac.id/" target="_blank"
+                >This is for PUIS Website</a
+              >
+              <i style="font-size: 12px"
+                >This is normal &lt;a&gt; tag, without styling</i
+              >
+            </li>
+            <li>
+              <a
+                href="https://puis.president.ac.id/"
+                target="_blank"
+                style="color: inherit; text-decoration: none"
+                >PUIS Website with basic Styling</a
+              >
+            </li>
+          </ol>
+        </li>
+      </ol>
     </div>
 
     <!-- Meter and Progress Showcase-->
@@ -274,8 +659,19 @@
       <div class="centered">
         <h1>Introduction to &lt;meter&gt; Tag and &lt;progress&gt; Tag</h1>
       </div>
-      <meter></meter>
-      <progress></progress>
+      <ol>
+        <li>
+          <meter></meter>
+        </li>
+        <li>
+          <progress></progress>
+        </li>
+        <i style="font-size: 12px"
+          >Please do keep in mind that this is just Introduction for these 2
+          tag, see "HTML Meter Documentation" or "HTML Progress Documentation"
+          for more advanced one.</i
+        >
+      </ol>
     </div>
     <!-- PLEASE DO NOT SEE PAST THIS SINCE IT IS UNNECESSARY!! -->
     <!-- PLEASE DO NOT SEE PAST THIS SINCE IT IS UNNECESSARY!! -->

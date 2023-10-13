@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Week 2</title>
+    <title>
+      President University Website Programming Summary | Week 2 | Moshe Dayan
+    </title>
     <link rel="stylesheet" href="../style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,200 +22,333 @@
 
     <!-- Picture Showcase -->
     <div class="mb box-shadow">
-      <h1>Picture Page</h1>
-      <div class="fd-row">
-        <img src="../Flower.jpg" alt="Picture of a Flower" width="25%" />
-        <img src="tom_and_jerry.jpg" alt="Tom and Jerry" />
-        <!-- When the Image is not loaded, or Corrupted, or not in File, it will use alt(alternatives) -->
-      </div>
+      <h1 class="centered">Picture Page</h1>
+      <ol>
+        <li>
+          <section style="display: flex; flex-direction: column">
+            <img
+              src="../images/Flower 2.jpg"
+              alt="Picture of a Flower"
+              width="25%"
+            />
+            <i style="font-size: 12px"
+              >This is an example of &lt;img&gt; tag that works</i
+            >
+          </section>
+        </li>
+        <li>
+          <section style="display: flex; flex-direction: column">
+            <img src="tom_and_jerry.jpg" alt="Flower" />
+            <i style="font-size: 12px"
+              >This is an example of &lt;img&gt; tag that the src="(not found)",
+              so it shows only alt="(content)"</i
+            >
+            <!-- When the Image is not loaded, or Corrupted, or not in File, it will use alt(alternatives) -->
+          </section>
+        </li>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
       <!-- To find Online Image, you can use Picsum -->
-      <h1>This is to showcase Random Image href</h1>
-      <img
-        src="https://picsum.photos/200/300"
-        alt="No Image means no Internet Connections"
-        width="25%"
-      />
-      <!-- When Image is loading, it will automatically load alt properties. -->
+      <h1 class="centered">This is to showcase Random Image href</h1>
+      <ol>
+        <li>
+          <img
+            src="https://picsum.photos/200/300"
+            alt="No Image means no Internet Connections"
+            width="25%"
+          />
+          <i style="font-size: 12px"
+            >This image will be generated randomly, because the source is a
+            random generator image. <br />
+            No image simply means no Internet Connection.
+          </i>
+          <!-- When Image is loading, it will automatically load alt properties. -->
+        </li>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
-      <h1>This is to showcase Figure and Figcaption</h1>
+      <h1 class="centered">This is to showcase Figure and Figcaption</h1>
       <p>To see explanation, see Commented Text</p>
-      <figure>
-        <img
-          src="https://picsum.photos/200/300"
-          alt="No Image means no Internet Connection"
-        />
-        <figcaption>Fig 1.1. Random Image</figcaption>
-        <!-- figcaption (figurecaption) gives you an explanation under your Image. -->
-      </figure>
-      <!-- Have to be inside <figure> -->
+      <ol>
+        <li>
+          <figure>
+            <img
+              src="https://picsum.photos/200/300"
+              alt="No Image means no Internet Connection"
+            />
+            <figcaption>Fig 1.1. Random Image</figcaption>
+            <i style="font-size: 12px"
+              >&lt;figcaption&gt; tag or figure caption, gives you an
+              explanation under content, like caption literally</i
+            >
+            <!-- figcaption (figurecaption) gives you an explanation under your Image. -->
+          </figure>
+          <i style="font-size: 12px"
+            >&lt;figure&gt; have to nest &lt;figcaption&gt; to make the tag
+            works.</i
+          >
+          <!-- Have to be inside <figure> -->
+        </li>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
-      <h1>This is to showcase an Image inside of Anchor</h1>
-      <a href="https://puis.president.ac.id/" target="_blank">
-        <img
-          src="../Flower.jpg"
-          alt="Not Image means no Internet Connection!"
-          width="25%"
-        />
-      </a>
-      <!-- You can put Image inside anchor tag (Hyperlink), then your Image will become an anchor link -->
+      <h1 class="centered">This is to showcase an Image inside of Anchor</h1>
+      <ol>
+        <li>
+          <a href="https://puis.president.ac.id/" target="_blank">
+            <img
+              src="../images/Flower 3.jpg"
+              alt="Not Image means no Internet Connection!"
+              width="25%"
+            />
+          </a>
+          <i style="font-size: 12px"
+            >You can put Images inside anchor tag or Hyperlink, then your Image
+            will also become an anchor link or hyperlink.</i
+          >
+          <!-- You can put Image inside anchor tag (Hyperlink), then your Image will become an anchor link -->
+        </li>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
-      <h1>
-        This is used for showcasing Responsive Image (Inspect the Website and
-        Change the Resolution to see)
+      <h1 class="centered" style="text-align: center">
+        This is used for showcasing Responsive Image \\
       </h1>
-      <pictures>
-        <source media="(min-width:  650px)" srcset="../Flower2.jpg" />
-        <source media="(min-width:  450px)" srcset="../Flower3.jpg" />
-        <img src="../Flower 4.jpg" alt="Flower Image" width="25%" />
-      </pictures>
-      <!-- Picture Demonstration, basically Responsive Image -->
+      <ol>
+        <li>
+          <pictures>
+            <source media="(min-width:  650px)" srcset="../Flower2.jpg" />
+            <source media="(min-width:  450px)" srcset="../Flower3.jpg" />
+            <img src="../images/Flower 4.jpg" alt="Flower Image" width="25%" />
+          </pictures>
+          <!-- Picture Demonstration, basically Responsive Image -->
+          <i style="font-size: 12px"
+            >(Inspect the Website and Change the Resolution to see)</i
+          >
+        </li>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
-      <h1>This is used to showcase Video Tag</h1>
-      <video controls autoplay>
-        <!-- There is a video attributes called "controls" so <video controls> -->
-        <!-- And there is another property, instead of "controls" which gives you freedom, you type autoplay -->
-        <source src="" type="" />
-        <!-- The type property is to define the File extension, for example type="video/mp4" -->
-      </video>
+      <h1 class="centered">This is used to showcase Video Tag</h1>
+      <ol>
+        <li>
+          <video controls autoplay>
+            <!-- There is a video attributes called "controls" so <video controls> -->
+            <!-- And there is another property, instead of "controls" which gives you freedom, you type autoplay -->
+            <source src="" type="" />
+            <!-- The type property is to define the File extension, for example type="video/mp4" -->
+          </video>
+          <i style="font-size: 12px"
+            >There is a &lt;video&gt; tag attributes called "controls", so
+            &lt;video <span style="color: lightblue">controls</span>&gt;
+            <br />
+            and there is another property which is &lt;video
+            <span style="color: lightblue">autoplay</span>&gt; which works so
+            the video autoplay when you refresh it. <br />and then there's
+            property to define the File Extension, which uses &lt;video
+            <span style="color: lightblue">type="video/mp4"</span>.</i
+          >
+        </li>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
-      <h1>This is used to showcase Audio Tag</h1>
-      <p>Please see Commented Lines on HTML to know more</p>
-      <audio>
-        <source />
-        <!-- Just like Video, it has similiar attributes, Type is used to define audio extension -->
-      </audio>
+      <h1 class="centered">This is used to showcase Audio Tag</h1>
+      <ol>
+        <li>
+          <p>Please see Commented Lines on HTML to know more</p>
+        </li>
+        <li>
+          <audio>
+            <source />
+            <!-- Just like Video, it has similiar attributes, Type is used to define audio extension -->
+          </audio>
+          <i style="font-size: 12px"
+            >Although there seems to be no different, empty spaces, there
+            actually is. <br />&lt;audio&gt; tag has similiar attributes to
+            &lt;video&gt;, but since there's no &lt;source /&gt;, there will be
+            no audio being played.</i
+          >
+        </li>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
-      <h1>This is used to showcase Subtitle in Video Tag</h1>
-      <p>See Commented Lines for more</p>
-      <video>
-        <source />
-        <track src="endgame_id.vtt" srclang="ind" />
-        <track src="endgame_eng.vtt" srclang="eng" />
-        <!-- To use Subtitle, usually .vtt extension, you have to use src attributes and srclang which tells subtitles what Language it is -->
-      </video>
+      <h1 class="centered">This is used to showcase Subtitle in Video Tag</h1>
+      <ol>
+        <li>
+          <p>See Commented Lines for more</p>
+        </li>
+        <li>
+          <video>
+            <source />
+            <track src="endgame_id.vtt" srclang="ind" />
+            <track src="endgame_eng.vtt" srclang="eng" />
+            <!-- To use Subtitle, usually .vtt extension, you have to use src attributes and srclang which tells subtitles what Language it is -->
+          </video>
+          <i style="font-size: 12px"
+            >Just like &lt;audio&gt; tag, there seems to be no different as
+            well, that simply because we didn't put it properly.<br />Subtitle
+            usually uses .vtt extension, and you have to use src attributes as
+            well to it, then srclang to tell the subtitles what Language is it
+            referring to.</i
+          >
+        </li>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
-      <h1>This is the Introduction to Table</h1>
-      <div>
-        <table>
-          <!-- tr stands for table row, td stands for table data (table column), th stands for table header -->
-          <tr>
-            <!-- Table Row, Adds new Row -->
-            <th>Student ID</th>
-            <th>Name</th>
-            <th>Major</th>
-            <th>GPA</th>
-            <!-- Table Header, Bold Fonts -->
-          </tr>
-          <tr>
-            <!-- Table Row, Adds new Row -->
-            <td>001202300001</td>
-            <td>John Doe</td>
-            <td>Informatics</td>
-            <td>3.90</td>
-            <!-- Table Data, Table Columns -->
-          </tr>
-        </table>
-      </div>
+      <h1 class="centered">This is the Introduction to Table</h1>
+      <ol>
+        <li>
+          <table>
+            <!-- tr stands for table row, td stands for table data (table column), th stands for table header -->
+            <tr>
+              <!-- Table Row, Adds new Row -->
+              <th>Student ID</th>
+              <th>Name</th>
+              <th>Major</th>
+              <th>GPA</th>
+              <!-- Table Header, Bold Fonts -->
+            </tr>
+            <tr>
+              <!-- Table Row, Adds new Row -->
+              <td>001202300001</td>
+              <td>John Doe</td>
+              <td>Informatics</td>
+              <td>3.90</td>
+              <!-- Table Data, Table Columns -->
+            </tr>
+          </table>
+          <i style="font-size: 12px"
+            >There will be &lt;table&gt; tag, which basicall stands for table
+            nest, and then &lt;tr&gt; tag, which stands for Table Row, then
+            there will be &lt;th&gt; tag, stands for Table Header. <br />Then
+            there will be another &lt;tr&gt; tag, so 2 Rows of Table, but now
+            instead of &lt;th&gt; tag, it's &lt;td&gt; tag, stands for Table
+            Data.
+          </i>
+        </li>
+      </ol>
     </div>
 
     <!-- Table semantics in HTML: <thead> <tbody> <tfoot> -->
     <!-- Using these tags, if the table is long, then the header and footer will be printed on the next pages -->
 
     <div class="mb box-shadow">
-      <h1>This is to showcase Table Semantics</h1>
+      <h1 class="centered">This is to showcase Table Semantics</h1>
       <p>See Commented Lines in HTML to see more.</p>
       <div>
-        <table>
-          <!-- You have to start from <table> <table/> -->
-          <thead>
-            <th>Student ID</th>
-            <th>Name</th>
-            <th>Major</th>
-            <th>GPA</th>
-          </thead>
-          <tbody>
-            <td>00120230001</td>
-            <td>Von Dough</td>
-            <td>International Relations</td>
-            <td>3.9</td>
-          </tbody>
-        </table>
+        <ol>
+          <li>
+            <table>
+              <!-- You have to start from <table> <table/> -->
+              <thead>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Major</th>
+                <th>GPA</th>
+              </thead>
+              <tbody>
+                <td>00120230001</td>
+                <td>Von Dough</td>
+                <td>International Relations</td>
+                <td>3.9</td>
+              </tbody>
+            </table>
+            <i style="font-size: 12px"
+              >Just like above, it also starts with &lt;table&gt; tag. <br />but
+              instead of using &lt;tr&gt; tag, we uses &lt;thead&gt; tag for the
+              first row and &lt;tbody&gt; tag for the second row.</i
+            >
+          </li>
+        </ol>
       </div>
       <!-- Since this has no Border(originally), you have to use Border tag in Style.css -->
     </div>
 
     <div class="mb box-shadow">
-      <h1>This is to showcase Colspan</h1>
+      <h1 class="centered">This is to showcase Colspan</h1>
       <!-- Colspan Showcase -->
-      <div>
-        <table>
-          <tr>
-            <td colspan="2">A</td>
-            <!-- colspan is to Merge Column -->
-          </tr>
-          <tr>
-            <td>B</td>
-            <td>C</td>
-          </tr>
-        </table>
-      </div>
+      <ol>
+        <li>
+          <table>
+            <tr>
+              <td colspan="2">A</td>
+              <!-- colspan is to Merge Column -->
+            </tr>
+            <tr>
+              <td>B</td>
+              <td>C</td>
+            </tr>
+          </table>
+          <i style="font-size: 12px"
+            >In this case, we are creating 2 rows of table, but we use &lt;td
+            <span style="color: lightblue">colorspan="2"</span>&gt; to tell that
+            we are taking 2 Columns in the First Row.<br />Then we use the
+            normal &lt;tr&gt; and 2 Table Data which takes 2 Columns.</i
+          >
+        </li>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
-      <h1>This is to showcase Rowspan</h1>
+      <h1 class="centered">This is to showcase Rowspan</h1>
       <!-- Rowspan Showcase -->
-      <div>
-        <table>
-          <tr>
-            <td rowspan="2">A</td>
-            <td>B</td>
-            <!-- rowspan is to Merge Row -->
-          </tr>
-          <tr>
-            <td>C</td>
-          </tr>
-        </table>
-      </div>
+      <ol>
+        <li>
+          <table>
+            <tr>
+              <td rowspan="2">A</td>
+              <td>B</td>
+              <!-- rowspan is to Merge Row -->
+            </tr>
+            <tr>
+              <td>C</td>
+            </tr>
+          </table>
+          <i style="font-size: 12px"
+            >Just like above, now we use &lt;td
+            <span style="color: lightblue">rowspan="2"</span>&gt; to Merge 2
+            Rows.</i
+          >
+        </li>
+      </ol>
     </div>
 
     <div class="mb box-shadow">
-      <h1>This is to showcase Week 2 Exercise</h1>
+      <h1 class="centered">This is to showcase Week 2 Exercise</h1>
       <!-- Exercise -->
-      <div>
-        <table>
-          <tr>
-            <td colspan="3">A</td>
-            <td>B</td>
-            <td rowspan="3">C</td>
-          </tr>
-          <tr>
-            <td rowspan="2">D</td>
-            <td colspan="3">E</td>
-          </tr>
-          <tr>
-            <td>F</td>
-            <td>G</td>
-            <td>H</td>
-          </tr>
-        </table>
-      </div>
+      <ol>
+        <li>
+          <table>
+            <tr>
+              <td colspan="3">A</td>
+              <td>B</td>
+              <td rowspan="3">C</td>
+            </tr>
+            <tr>
+              <td rowspan="2">D</td>
+              <td colspan="3">E</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td>G</td>
+              <td>H</td>
+            </tr>
+          </table>
+          <i style="font-size: 12px"
+            >This is basically the exercise showcase of Week 2, do keep in mind
+            you build Row per Row for &lt;table&gt; and &lt;frame&gt;.
+          </i>
+        </li>
+      </ol>
     </div>
   </body>
 </html>
