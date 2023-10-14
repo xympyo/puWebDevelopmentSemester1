@@ -24,15 +24,21 @@ h6,
 i {
   pointer-events: none;
 }
-#mask {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  opacity: 0.5;
+
+.centered {
+  /* from cssportal.com */
+  background: #0802a3;
+  background: linear-gradient(
+    to top right,
+    #0802a3 5%,
+    #ff4b91 23%,
+    #ff7676 54%,
+    #ffcd4b 98%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .white {
   color: #fbfff4;
 }
@@ -45,12 +51,12 @@ i {
 .box-shadow {
   border: 1rem #141e46;
   padding: 2rem;
-  /* From https://css.glass (CSS Glass Generator) */
-  background: rgba(251, 255, 244, 0.3);
+  /* From https://css.glass */
+  background: rgba(0, 193, 147, 0.27);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(12.4px);
+  -webkit-backdrop-filter: blur(12.4px);
 }
 .mainpageButton {
   text-decoration: none;
